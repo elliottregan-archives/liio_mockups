@@ -14,13 +14,6 @@ header {
   background-color: #fffffe;
 }
 
-h2 {
-  border-left: 3px solid #fe1111;
-  padding-left: 20px;
-  margin-left: -23px;
-  color: #092935;
-}
-
 section#profile {
   padding: 20px 40px 0;
   margin-bottom: 40px;
