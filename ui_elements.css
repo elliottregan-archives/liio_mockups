@@ -110,3 +110,7 @@ footer {
 footer p {
   margin-right: 300px;
 }
+
+.block.half {
+  display: inline-block;
+}
