@@ -24,31 +24,35 @@
 </head>
 <body>
   <header>
-    <img src="liio_logo.png" alt="Liio Logo" class="header_logo"/>
-    <nav>
-      <a href="#">Liio Tutorial</a>
-      <a href="#">FAQ</a>
-      <a href="#">Contact Us</a>
-    </nav>
+    <div class="container">
+      <img src="liio_logo.png" alt="Liio Logo" class="header_logo"/>
+      <nav>
+        <a href="#">Liio Tutorial</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact Us</a>
+      </nav>
+    </div>  
   </header>
   <section id="profile" class="horz_node">
   
-    <figure class="profile_pic">
-      <img src="about-icon.svg" alt="profile_pic" />
-      <figcaption>First Last</figcaption>
-    </figure>
-    
-    <dl>
-      <dt>My Mission Statement</dt>
-      <dd>My mission is to figure out what my mission is. Then, once I've figured it out, I want to pursue it.</dd>
-      <dt>My Core Values:</dt>
-      <dd>Financial Security, Integrity, Knowledge, Independence.</dd>
-      <dt>What I want to get out of Liio:</dt>
-      <dd>I want to get healthy, improve my relationships and learn new things.</dd>
-    </dl>
+    <div class="container">
+      <figure class="profile_pic">
+        <img src="about-icon.svg" alt="profile_pic" />
+        <figcaption>First Last</figcaption>
+      </figure>
+      
+      <dl>
+        <dt>My Mission Statement</dt>
+        <dd>My mission is to figure out what my mission is. Then, once I've figured it out, I want to pursue it.</dd>
+        <dt>My Core Values:</dt>
+        <dd>Financial Security, Integrity, Knowledge, Independence.</dd>
+        <dt>What I want to get out of Liio:</dt>
+        <dd>I want to get healthy, improve my relationships and learn new things.</dd>
+      </dl>
+    </div>
     
   </section>
-  <div id="sidebar">
+  <div class="container"><div id="sidebar">
     <section id="goals">
       <h2>My Active Goals</h2>
       <ul class="goal_list">
@@ -99,16 +103,22 @@
     
     <div id="stats">
       <h3>My Stats</h3>
-      <dl class="">
-        <dt>Goats I've Started</dt>
-        <dd>5</dd>
-        <dt>Personal</dt>
-        <dd>Shared</dd>
-        <dt>Goals I've completed</dt>
-        <dd>2</dd>
-        <dt>Weeks Using Liio</dt>
-        <dd>5</dd>
-      </dl>
+        <figure>
+          <figcaption>Goals I've Started</figcaption>
+          <span class="big_text">5</span> goals
+        </figure>
+        
+        <figure>
+          <figcaption>Goals I've completed</figcaption>
+          <span class="big_text">2</span> goals
+        </figure>
+        
+        
+        <figure>
+          <figcaption>Weeks Using Liio</figcaption>
+          <span class="big_text">5</span> weeks
+        </figure>
+        
     </div>
     
     <div id="pie_chart" class="graph" width='400' height='200' >
@@ -116,5 +126,5 @@
     </div>
     
   </div>
-</body>
+  </div></body>
 </html>
