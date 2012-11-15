@@ -10,6 +10,8 @@
   
   <link rel="stylesheet" href="ui_elements.css" type="text/css" />
   <link rel="stylesheet" href="dashboard.css" type="text/css" />
+  
+  <link rel="stylesheet" href="goal.css" type="text/css" />
   <link rel="stylesheet" href="global.css" type="text/css" />
 
    <!-- Flot stuff -->
@@ -25,12 +27,14 @@
 <body>
   <header>
     <div class="container">
-      <img src="liio_logo.png" alt="Liio Logo" class="header_logo"/>
-      <nav>
-        <a href="#">Liio Tutorial</a>
-        <a href="#">FAQ</a>
-        <a href="#">Contact Us</a>
-      </nav>
+      <div class="container">
+        <img src="liio_logo.png" alt="Liio Logo" class="header_logo"/>
+        <nav>
+          <a href="#">Liio Tutorial</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact Us</a>
+        </nav>
+      </div>
     </div>  
   </header>
   <section id="profile" class="horz_node">
@@ -40,91 +44,95 @@
         <img src="about-icon.svg" alt="profile_pic" />
         <figcaption>First Last</figcaption>
       </figure>
-      
-      <dl>
-        <dt>My Mission Statement</dt>
-        <dd>My mission is to figure out what my mission is. Then, once I've figured it out, I want to pursue it.</dd>
-        <dt>My Core Values:</dt>
-        <dd>Financial Security, Integrity, Knowledge, Independence.</dd>
-        <dt>What I want to get out of Liio:</dt>
-        <dd>I want to get healthy, improve my relationships and learn new things.</dd>
-      </dl>
+      <section id="inspire">
+        <h2>My Inspiration</h2>
+        <dl>
+          <dt>My Mission Statement</dt>
+          <dd>My mission is to figure out what my mission is. Then, once I've figured it out, I want to pursue it.</dd>
+          <dt>My Core Values:</dt>
+          <dd>Financial Security, Integrity, Knowledge, Independence.</dd>
+          <dt>What I want to get out of Liio:</dt>
+          <dd>I want to get healthy, improve my relationships and learn new things.</dd>
+        </dl>
+      </section>
     </div>
     
   </section>
-  <div class="container"><div id="sidebar">
-    <section id="goals">
-      <h2>My Active Goals</h2>
-      <ul class="goal_list">
-        <li>Skiing</li>
-        <li>Lancing</li>
-        <li>Pool</li>
-      </ul>
-    </section>
-    
-    <section id="priorities">
-      <h2>My Priorities This Week</h2>
-      <form action="">
-        <input type="checkbox" name="pri-01" id="pri-01" value="" />
-        <label for="pri-01">I will do cardio 4x this week</label>
-        <input type="checkbox" name="pri-02" id="pri-02" value="" />
-        <label for="pri-02">I will avoid conflabelct with my children</label>
-        <input type="checkbox" name="pri-03" id="pri-03" value="" />
-        <label for="pri-03">I will have no more than 2 desserts</label>
-        <input type="checkbox" name="pri-01" id="pri-04" value="" />
-        <label for="pri-04">I will eat green leafy vegetables 3x this week</label>
-      </form>
-    </section>
-    
-  </div>
-  <div id="main_content">
-    <section id="network">
-      <div class="half block">
-        <h2>People Helping Me</h2>
-        <ul>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li class="new">+</li>
+  <div class="container">
+    <div id="sidebar">
+      <section id="goals">
+        <h2>My Active Goals</h2>
+        <ul class="goal_list">
+          <li><img src="images/ski.svg" alt="Skiing" class="ski"/></li>
+          <li><img src="images/horse.svg" alt="Lancing" class="horse"/></li>
+          <li><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" /></li>
         </ul>
-      </div>
-      <div class="half block">
-        <h2>People I'm Helping</h2>
-        <ul>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li class="new">+</li>
-        </ul>
-      </div>
-    </section>
-    
-    <div id="stats">
-      <h3>My Stats</h3>
-        <figure>
-          <figcaption>Goals I've Started</figcaption>
-          <span class="big_text">5</span> goals
-        </figure>
-        
-        <figure>
-          <figcaption>Goals I've completed</figcaption>
-          <span class="big_text">2</span> goals
-        </figure>
-        
-        
-        <figure>
-          <figcaption>Weeks Using Liio</figcaption>
-          <span class="big_text">5</span> weeks
-        </figure>
-        
-    </div>
-    
-    <div id="pie_chart" class="graph" width='400' height='200' >
+      </section>
+      
+      <section id="priorities">
+        <h2>My Priorities This Week</h2>
+        <form action="">
+          <input type="checkbox" name="pri-01" id="pri-01" value="" />
+          <label for="pri-01">I will do cardio 4x this week</label>
+          <input type="checkbox" name="pri-02" id="pri-02" value="" />
+          <label for="pri-02">I will avoid conflict with my children</label>
+          <input type="checkbox" name="pri-03" id="pri-03" value="" />
+          <label for="pri-03">I will have no more than 2 desserts</label>
+          <input type="checkbox" name="pri-01" id="pri-04" value="" />
+          <label for="pri-04">I will eat green leafy vegetables 3x this week</label>
+        </form>
+      </section>
       
     </div>
-    
+    <div id="main_content">
+      <section id="network">
+        <div class="half block">
+          <h2>People Helping Me</h2>
+          <ul>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li class="new">+</li>
+          </ul>
+        </div>
+        <div class="half block">
+          <h2>People I'm Helping</h2>
+          <ul>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li class="new">+</li>
+          </ul>
+        </div>
+      </section>
+      
+      <div id="stats">
+        <h3>My Stats</h3>
+          <figure>
+            <figcaption>Goals I've Started</figcaption>
+            <span class="big_text">5</span> goals
+          </figure>
+          
+          <figure>
+            <figcaption>Goals I've completed</figcaption>
+            <span class="big_text">2</span> goals
+          </figure>
+          
+          
+          <figure>
+            <figcaption>Weeks Using Liio</figcaption>
+            <span class="big_text">5</span> weeks
+          </figure>
+          
+      </div>
+      
+      <div id="pie_chart" class="graph" width='400' height='200' >
+        
+      </div>
+      
+    </div>
   </div>
-  </div></body>
+</body>
 </html>

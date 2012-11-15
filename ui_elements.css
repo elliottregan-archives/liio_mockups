@@ -1,5 +1,6 @@
 button {
   cursor: pointer;
+  font-family: Quicksand, sans-serif;
 }
 
 button.glassy {
@@ -60,11 +61,10 @@ button.glassy {
 }
 
 dl {
-  margin: 0 0 40px;
 }
 
 dt {
-  font: 1.2em Armata, sans-serif;
+  font: 1.2em Quicksand, sans-serif;
 }
 
 dd {
