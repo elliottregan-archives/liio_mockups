@@ -44,18 +44,23 @@ img.sunscreen {
   border-color: #30ce15;
 }*/
 
+#notifications ul {
+  height: 180px;
+  overflow-y: scroll;
+}
+
 #notifications li {
-  border: 1px solid #d2d2d2;
   padding: 4px 8px;
-  margin: 4px 0;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  background: -moz-linear-gradient(90deg, #fafafa 0%, #eaeaea 100%) #fafafa;
-  background: -webkit-gradient(linear, left bottom, left top, from(#fafafa), to(#eaeaea)) #fafafa;
-  -moz-box-shadow: inset 3px 0 0 #f45d5d, inset 0 2px 0 #ffffff;
-  -webkit-box-shadow: inset 3px 0 0 #f45d5d, inset 0 2px 0 #ffffff;
-  box-shadow: inset 3px 0 0 #f45d5d, inset 0 2px 0 #ffffff;
+  margin: 8px 0;
+  border-left: 3px solid #c60c0c;
+  cursor: pointer;
+}
+
+#notifications li:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  border: 1px solid #ededed;
+  border-left: 3px solid #c60c0c;
+  padding: 3px 8px;
 }
 
 #priorities label {
@@ -88,7 +93,6 @@ img.sunscreen {
   content: '✔';
   width: 10px;
   height: 10px;
-  background-color: #4a4d67;
   position: absolute;
   left: 0;
   top: 2px;
@@ -101,6 +105,8 @@ img.sunscreen {
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
+  background: -moz-linear-gradient(90deg, #494d66 0%, #2e3141 100%) #4a4d67;
+  background: -webkit-gradient(linear, left bottom, left top, from(#494d66), to(#2e3141)) #4a4d67;
 }
 
 #priorities input[type=checkbox] {
