@@ -30,6 +30,7 @@ h2 {
   text-shadow: 0 1px 0 #ffffff;
   font-weight: 200;
   font-style: normal;
+  margin-top: 0;
 }
 
 h2, h3, h4, h5, h6 {
@@ -78,4 +79,12 @@ nav a {
 
 #goal_steps {
   text-align: left;
+}
+
+dt {
+  margin-top: 8px;
+}
+
+dt:first-of-type {
+  margin-top: 0;
 }

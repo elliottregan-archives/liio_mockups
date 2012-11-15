@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Goal HReflect</title>
+  <title>SPARK a new goal</title>
   
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -75,36 +75,38 @@
     </div>
     <div id="main_content">
       <nav id="goal_steps" class="tab_set">
-        <button>Home</button><button>Start</button><button>Plan</button><button>Announce</button><button class="current">Reflect</button><button>Kudos</button>
+        <button>Home</button><button>Start</button><button>Plan</button><button>Announce</button><button>Reflect</button><button>Kudos</button>
       </nav>
       
-<!--      <section id="wk_reports">
-      
-        <dl>
-          <dt>10/1:</dt>
-          <dd>Announce</dd>
-          
-          <dt>9/24:</dt>
-          <dd>Plan</dd>
-          
-          <dt>9/17:</dt>
-          <dd>Start</dd>
-        </dl>
-      
-      </section>-->
-      
-      <section id="start_questions">
-        <h2>Weekly Reflections</h2>
-          <dl>
-            <dt>9/24 - 10/1:</dt>
-            <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin lorem eu tortor ornare gravida. Sed vitae tempus turpis. Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</dd>
-          
-            <dt>9/17-9/24</dt>
-            <dd>Nunc libero mi, venenatis vitae consequat sit amet, pellentesque ut odio. Sed aliquam risus vel ipsum vestibulum suscipit convallis ipsum eleifend. Nam id risus at magna tincidunt venenatis et porttitor tellus. Sed dictum dignissim tristique. Integer ac elit in lectus imperdiet dapibus eget sed dui. Nunc laoreet, metus sed euismod venenatis, enim nisl ultrices lectus, vel feugiat purus est et quam. </dd>
-          
-          </dl>
+      <h2>SPARK a New Goal</h2>
+            
+      <fieldset>
+        <legend>What is this goal about?</legend>
+        <select>
+          <option>Communication Skills</option>
+        </select>
         
-      </section>
+        <select>
+          <option>Personal Goals</option>
+        </select>
+        
+        <label for="unique_name">Unique</label>
+        <input type="text" name="unique_name" id="unique_name" value="" placeholder="Use SPARK to make my own goal!" />
+      </fieldset>
+      
+      <label for="rename">Rename this goal (optional):</label>
+      <input type="text" name="rename" value="" id="rename" />
+      
+      <label for="image">Approve default image or upload your own:</label>
+      <input type="image" name="image" id="image" value="" />
+      
+      <fieldset>
+        <legend for="goal_type">Goal type:</legend>
+        <label for="pro">Professional</label>
+        <input type="radio" id="pro" name="type" value="" />
+        <label for="pri">Private</label>
+        <input type="radio" name="type" id="pri" value="" />
+      </fieldset>
       
     </div>
   </div>
