@@ -41,16 +41,29 @@ a {
   text-decoration: none;
 }
 
-header {
-  height: 60px;
-  width: auto;
-  padding: 20px 40px;
+.logo_group {
+  height: 90px;
 }
 
-.header_logo {
+#sidebar .header_logo:not(.inset) {
+  background: url(images/liio_logo.png) no-repeat left top;
+  opacity: 0;
+  -webkit-transition: opacity 1000ms ease-in-out 0s;
+}
+
+#sidebar .header_logo {
   display: block;
-  float: left;
-  height: 60px;
+  width: 120px; height: 90px;
+  margin-bottom: 20fpx;
+  background: url(images/Liio_inset_logo.png) no-repeat left top;
+  background-size: 100%;
+  position: absolute;
+  top: 10px;
+  z-index: 10px;
+}
+
+#sidebar:hover .header_logo:not(.inset) {
+  opacity: 1;
 }
 
 header nav {
@@ -63,22 +76,57 @@ nav a {
 }
 
 #sidebar {
-  width: 200px;
-  height: auto;
+  width: 240px; height: 100%;
   position: absolute;
-  padding: 0 40px;
+  padding: 10px 20px;
   border-right: 1px solid #dedede;
+  background-color: #3b3b3b;
+  color: #f0f0f0;
+  text-shadow: none;
+}
+
+#sidebar ul {
+  margin: 0;
+}
+
+#sidebar section {
+  padding: 10px 0;
+  margin: 0;
 }
 
 #sidebar h2 {
-  color: #646464;
-  text-shadow: 0 1px 0 #ffffff;
+  color: #595959;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.34);
+  margin: 0;
+}
+
+#sidebar nav a {
+  display: block;
+  padding: 8px 12px;
+  margin: 0;
+
+  background-color: #464646;
+  border: 1px solid #363636;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  color: #959595;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-shadow: 0 -1px 0 black;
 }
 
 #main_content {
-  margin-left: 240px;
-  padding: 0 80px 40px;
+  margin-left: 280px;
+  padding: 0 40px 40px;
   width: auto;
+  border-left: 1px solid #060606;
+  -moz-box-shadow: -6px 0 16px rgba(0, 0, 0, 0.51), inset 1px 0 0 #ffffff;
+  -webkit-box-shadow: -6px 0 16px rgba(0, 0, 0, 0.51), inset 1px 0 0 #ffffff;
+  box-shadow: -6px 0 16px rgba(0, 0, 0, 0.51), inset 1px 0 0 #ffffff;
+  z-index: 10;
+  position: relative;
 }
 
 #goal_steps {

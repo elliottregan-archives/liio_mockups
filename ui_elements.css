@@ -88,7 +88,7 @@ footer p {
 }
 
 nav.tab_set button.current {
-  padding: 12px 26px;
+  padding: 12px 0;
   color: #474747;
   border: 1px solid #c4c4c4;
   border-top: 3px solid #505050;
@@ -99,6 +99,7 @@ nav.tab_set button.current {
   background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 41.7%, rgba(255, 255, 255, 0.63) 44.1%, rgba(255, 255, 255, 0) 100%) #f1f1f1;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.35)), color-stop(0.417, rgba(255, 255, 255, 0)), color-stop(0.441, rgba(255, 255, 255, 0.63)), to(rgba(255, 255, 255, 0))) #f1f1f1;
   text-shadow: 0 1px 0 #ffffff;
+  text-align: center;
 }
 
 nav.tab_set button:active {
