@@ -16,6 +16,10 @@ textarea {
 
 nav#goal_steps {
   margin-bottom: 40px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
 }
 
 #priorities ul li {
@@ -215,14 +219,15 @@ img.sunscreen {
   -moz-border-radius: 6px;
   border-radius: 6px;
   text-align: center;
-  -moz-box-shadow: inset 0 1px 0 #ffffff, inset 0 1px 28px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.29);
-  -webkit-box-shadow: inset 0 1px 0 #ffffff, inset 0 1px 28px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.29);
-  box-shadow: inset 0 1px 0 #ffffff, inset 0 1px 28px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.29);
+  -moz-box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff, inset 0 1px 28px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff, inset 0 1px 28px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff, inset 0 1px 28px rgba(0, 0, 0, 0.1);
   color: transparent;
 }
 
 #social {
   margin-bottom: 40px;
+  float: right;
 }
 
 #social h2 {
@@ -257,10 +262,15 @@ li.message {
   box-shadow: inset 0 1px 0 #ffffff;
 }
 
+li.message:first-of-type {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
 li.message .text {
   margin-left: 60px;
   padding: 10px;
-  background-color: #f3f3f3;
 }
 
 li.message .date {

@@ -87,10 +87,31 @@ footer p {
   width: 48%;
 }
 
+.tab_set {
+  
+}
+
+.tab_set button {
+  padding: 15px 26px 12px;
+  margin: 0;
+  color: #c2c2c2;
+  text-shadow: 0 1px 1px #ffffff;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: 16.66667%;
+  border: none;
+  border-bottom: 1px solid #d4d4d4;
+  border-right: 1px solid #dbdbdb;
+  -moz-box-shadow: inset 1px 0 0 #ffffff, inset 0 1px 4px #ffffff, inset -1px 0 0 rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: inset 1px 0 0 #ffffff, inset 0 1px 4px #ffffff, inset -1px 0 0 rgba(255, 255, 255, 0.75);
+  box-shadow: inset 1px 0 0 #ffffff, inset 0 1px 4px #ffffff, inset -1px 0 0 rgba(255, 255, 255, 0.75);
+  background-color: #f4f4f4;
+}
+
 nav.tab_set button.current {
   padding: 12px 0;
   color: #474747;
-  border: 1px solid #c4c4c4;
   border-top: 3px solid #505050;
   text-transform: uppercase;
   -moz-box-shadow: inset 0 1px 2px #ffffff, 0 1px 2px rgba(0, 0, 0, 0.09);
@@ -102,6 +123,10 @@ nav.tab_set button.current {
   text-align: center;
 }
 
+nav.tab_set button.current ~ button {
+  color: #888888;
+}
+
 nav.tab_set button:active {
   color: #525252;
   text-shadow: 0 -1px rgb(255, 255, 255);
@@ -110,42 +135,13 @@ nav.tab_set button:active {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.69), inset 0 1px 2px rgba(255, 255, 255, 0.49);
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.14)));
   background-image: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.14) 100%);
-}
-
-.tab_set button {
-  padding: 12px 26px;
-  margin: 0;
-  color: #b3b3b3;
-  text-shadow: 0 1px 1px #ffffff;
-  font-variant: small-caps;
-  font-weight: bold;
-  font-size: 1.2em;
-  border: 1px solid #d4d4d4;
-  width: 16.66667%;
-  border-right: 1px solid #dbdbdb;
-  border-left: none;
-  -moz-box-shadow: inset 1px 0 0 #ffffff, inset 0 1px 4px #ffffff, inset -1px 0 0 rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: inset 1px 0 0 #ffffff, inset 0 1px 4px #ffffff, inset -1px 0 0 rgba(255, 255, 255, 0.75);
-  box-shadow: inset 1px 0 0 #ffffff, inset 0 1px 4px #ffffff, inset -1px 0 0 rgba(255, 255, 255, 0.75);
-  background-color: #f4f4f4;
+  
+  border-right: none;
 }
 
 .tab_set button:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.66)));
   background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.66) 100%);
-}
-
-.tab_set button:first-of-type {
-  border-left: 1px solid #dbdbdb;
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
-}
-
-.tab_set button:last-of-type {
-  -webkit-border-radius: 0 3px 3px 0;
-  -moz-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
 }
 
 label {
