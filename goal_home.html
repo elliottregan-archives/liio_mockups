@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Goal Announce</title>
+  <title>Goal Home</title>
   
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -15,7 +15,7 @@
 
    <!-- Flot stuff -->
     <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="js/flot/excanvas.min.js"></script><![endif]-->
-    <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="js/flot/jquery.js"></script>
     <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script>
     <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.resize.js"></script>
 
@@ -72,10 +72,21 @@
       <button class="current">Home</button><button>Start</button><button>Plan</button><button>Announce</button><button>Reflect</button><button>Kudos</button>
     </nav>
     
-    <h2>Steps Completed</h2>
-    <div id="progress_graph" class="graph" width='400' height='200' ></div>
+    <section id="stats">
+      <h2>Steps Completed</h2>
+      <div id="progress_graph" class="graph" width='400' height='200' ></div>
+    </section>    
+    <section id="notifications">
+      <h2>Notifications</h2>
+      <ul>
+        <li>Reminder: complete your Week 12 report</li>
+        <li>ReminderL PLant your steps for Week 13</li>
+        <li>Dan wated to share this article with you [link]</li>
+        <li>Pam gave you a Kudos point and wanted to share this feedback:<blockquote>"Your team did great at the board presentation. Keep up the good work!"</blockquote>
+        </li>
+      </ul>
+    </section>
     
-
   </div>
 </body>
 </html>

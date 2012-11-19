@@ -81,9 +81,12 @@ img.sunscreen {
   border-color: #30ce15;
 }*/
 
+#stats {
+  width: 100%;
+}
+
 #notifications ul {
-  height: 180px;
-  overflow-y: scroll;
+
 }
 
 #notifications li {
