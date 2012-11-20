@@ -69,50 +69,30 @@
 
   <div id="main_content">
     <nav id="goal_steps" class="tab_set">
-      <button>Home</button><button>Start</button><button>Plan</button><button class="current">Announce</button><button>Reflect</button><button>Kudos</button>
+      <button class="current">Home</button><button>Start</button><button>Plan</button><button>Announce</button><button>Reflect</button><button>Kudos</button>
     </nav>
-    <section id="social">
-      <section id="social_buttons" class="inline">
-        <button class="tw">Twitter</button><button class="fb">Facebook</button><button class="em">Email</button>
-      </section>
+    
+    <section id="start_questions">
+      <form method="post" action="">
+      
+          <label for="motive">What is motivating you to persue your goal?</label>
+          <textarea name="motive" id="motive" ></textarea>
+
+          <label for="manage">What are your management strengths? Weaknesses?</label>
+          <textarea name="manage" id="manage" ></textarea>
+        
+          <label for="results">What do you expect the results of your improved management skills to be?</label>
+          <textarea name="results" id="results" ></textarea>
+        
+          <label for="direction">What feedback or direction have you received from others on your strengths and weaknesses?</label>
+          <textarea name="direction" id="direction" ></textarea>
+        
+          <label for="improve">What have you done before to improve your management skills? What did you learn and what will you do differently this time?</label>
+          <textarea name="improve" id="improve" ></textarea>
+      
+          <button type="submit" class="glassy">Save</button>
+      </form>
     </section>
     
-    <section id="incoming">
-      <h2>Incoming Messages</h2>
-      <ul class="messages">
-        <li class="message">
-          <div class="date">
-            <div class="day">7</div>
-            <div class="mon">nov</div>
-          </div>
-          <div class="text">
-            <h3>Manager</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
-          </div>
-        </li>
-        <li class="message">
-          <div class="date">
-            <div class="day">3</div>
-            <div class="mon">nov</div>
-          </div>
-          <div class="text">
-            <h3>Manager</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
-          </div>
-        </li>
-        <li class="message">
-          <div class="date">
-            <div class="day">27</div>
-            <div class="mon">oct</div>
-          </div>
-          <div class="text">
-            <h3>Manager</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    
-  </div>
-</body>
+  </div></body>
 </html>
