@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Goal Plan</title>
+  <title>Goal Start</title>
   
   <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,9 +24,14 @@
 
 </head>
 <body>
-
-  <div class="container">
-    <div id="sidebar">
+  <div id="sidebar">
+    <div class="logo_group">
+      <div class="header_logo inset"></div>
+      <div class="header_logo"></div>
+    </div>
+    <nav>
+      <a>Dashboard</a>
+    </nav>
     <section id="goals">
       <h2>My Active Goals</h2>
       <ul class="goal_list">
@@ -35,9 +40,9 @@
         <li><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" /></li>
       </ul>
     </section>
-    
+  
     <section id="priorities">
-      <h2>My Priorities This Week</h2>
+      <h2>Weekly Priorities</h2>
       <form action="">
         <ul>
           <li>
@@ -61,57 +66,33 @@
     </section>
     
   </div>
+
   <div id="main_content">
     <nav id="goal_steps" class="tab_set">
       <button class="current">Home</button><button>Start</button><button>Plan</button><button>Announce</button><button>Reflect</button><button>Kudos</button>
     </nav>
     
-    <ul id="focus_areas">
-      <li>
-        <h3>Leadership:</h3>
-        <ul>
-          <li>Step A</li>
-          <li>Step B</li>
-          <li>Step C</li>
-          <li>Step D</li>
-          <li>Step E</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Communication:</h3>
-        <ul>
-          <li>Step A</li>
-          <li>Step B</li>
-          <li>Step C</li>
-          <li>Step D</li>
-          <li>Step E</li>
-          <li>Step F</li>
-          <li>Step G</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Planning:</h3>
-        <ul>
-          <li>Step A</li>
-          <li>Step B</li>
-          <li>Step C</li>
-          <li>Step D</li>
-          <li>Step E</li>
-        </ul>
-      </li>
-      <li>
-        <h3>Personal:</h3>
-        <ul>
-          <li>Step A</li>
-          <li>Step B</li>
-          <li>Step C</li>
-          <li>Step D</li>
-          <li>Step E</li>
-        </ul>
-      </li>
-    </ul>
+    <section id="start_questions">
+      <form method="post" action="">
+      
+          <label for="motive">What is motivating you to persue your goal?</label>
+          <textarea name="motive" id="motive" ></textarea>
+
+          <label for="manage">What are your management strengths? Weaknesses?</label>
+          <textarea name="manage" id="manage" ></textarea>
+        
+          <label for="results">What do you expect the results of your improved management skills to be?</label>
+          <textarea name="results" id="results" ></textarea>
+        
+          <label for="direction">What feedback or direction have you received from others on your strengths and weaknesses?</label>
+          <textarea name="direction" id="direction" ></textarea>
+        
+          <label for="improve">What have you done before to improve your management skills? What did you learn and what will you do differently this time?</label>
+          <textarea name="improve" id="improve" ></textarea>
+      
+          <button type="submit" class="glassy">Save</button>
+      </form>
+    </section>
     
-  </div>
-  </div>  
-</body>
+  </div></body>
 </html>
