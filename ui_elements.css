@@ -144,24 +144,83 @@ nav.tab_set button:active {
   background-image: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.66) 100%);
 }
 
-label {
-  margin: 4px 0;
+label, legend {
+  margin: 4px 0 12px;
   display: block;
+  color: #474747;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+select {
+  margin: 0 0 20px;
 }
 
 input[type=text], textarea {
   display: block;
-  background-color: #f2f2f2;
-  border: 1px solid #9a9b9a;
+  border: 1px solid #c5c5c5;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  margin-bottom: 20px;
-  padding: 8px;
+  margin-bottom: 40px;
+  padding: 12px 18px;
   font-size: 1em;
   color: #2c2c2c;
+  background: -moz-linear-gradient(90deg, #fdfdfd 76.2%, #f6f7f6 100%) #f7f7f7;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.762, #fdfdfd), to(#f6f7f6)) #f7f7f7;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type=text]:hover, textarea:hover {
+  border-color: #a9a9a9;
+}
+
+input[type=text]:active, input[type=text]:focus, textarea:active, textarea:focus {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  border-color: #989898;
 }
 
 textarea {
-  height: 3em;
+  height: 4em;
 }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input[type=radio] {
+  display: inline-block;
+}
+
+input[type=radio] + label {
+  display: inline-block;
+  font-style: normal;
+  font-weight: normal;
+}
+
+fieldset.two_column label, fieldset.two_column legend {
+	float: left;
+	width: 340px;
+	margin: 4px 0 5px 0;
+	font-weight: bold;
+  font-size: .9em;
+}
+
+fieldset.radio {
+  margin-top: 40px;
+}
+
+fieldset.radio.two_column label {
+	display: inline;
+	float: none;
+	width: auto;
+	font-weight: normal;
+	}

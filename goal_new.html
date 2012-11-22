@@ -67,7 +67,7 @@
       <h2>SPARK a New Goal</h2>
       <form action="">
             
-      <fieldset>
+      <fieldset class="two_column">
         <legend>What is this goal about?</legend>
         <select>
           <option>Communication Skills</option>
@@ -79,20 +79,20 @@
         
         <label for="unique_name">Unique</label>
         <input type="text" name="unique_name" id="unique_name" value="" placeholder="Use SPARK to make my own goal!" />
-      </fieldset>
-      
+
       <label for="rename">Rename this goal (optional):</label>
       <input type="text" name="rename" value="" id="rename" />
       
-      <label for="image">Approve default image or upload your own:</label>
-      <input type="image" name="image" id="image" value="" />
+      <label for="image">Upload your own image:</label>
+      <input type="file" name="image" id="image" value="" />
       
-      <fieldset>
+      </fieldset>
+      <fieldset class="radio two_column">
         <legend for="goal_type">Goal type:</legend>
-        <label for="pro">Professional</label>
         <input type="radio" id="pro" name="type" value="" />
-        <label for="pri">Private</label>
+        <label for="pro">Professional</label>
         <input type="radio" name="type" id="pri" value="" />
+        <label for="pri">Private</label>
       </fieldset>
     </form>
   </section>    
