@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Montserrat|Quicksand:400,300,700|Armata);
-
 html {
   color: #303030;
   text-shadow: 0 1px 2px #ffffff;
@@ -46,13 +44,16 @@ a {
   height: 90px;
 }
 
-#sidebar .header_logo:not(.inset) {
+.header_logo:not(.inset) {
   background: url(images/liio_logo.png) no-repeat left top;
-  opacity: 0;
   -webkit-transition: opacity 1000ms ease-in-out 0s;
 }
 
-#sidebar .header_logo {
+#sidebar .header_logo:not(.inset) {
+  opacity: 0;
+}
+
+.header_logo {
   display: block;
   width: 120px; height: 90px;
   background: url(images/Liio_inset_logo.png) no-repeat left top;
@@ -63,6 +64,49 @@ a {
 }
 
 #sidebar:hover .header_logo:not(.inset) {
+  opacity: 1;
+}
+
+#priorities ul li {
+  -webkit-transition: opacity 500ms ease-in-out 0s;
+  opacity: .6;
+}
+
+#priorities:hover ul li {
+  opacity: .8;
+}
+
+#priorities ul li:hover {
+  -webkit-transition: opacity 200ms ease-in-out 0s;
+  opacity: 1;
+}
+
+.goal_list img {
+  width: 16px; height: 16px;
+  padding: 4px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  border: 1px solid #cdcdcd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #b3b3b3;
+  opacity: .6;
+  -webkit-transition: opacity 500ms ease-in-out 0s;
+}
+
+.goal_list img:first-of-type {
+  margin-left: 0;
+}
+
+#goals:hover .goal_list img {
+  opacity: .6;
+  -webkit-transition: opacity 200ms ease-in-out 0s;
+  
+}
+
+#goals .goal_list li:hover img {
   opacity: 1;
 }
 
@@ -79,14 +123,10 @@ nav a {
   width: 240px; height: 100%;
   position: fixed;
   padding: 10px 20px;
-  border-right: 1px solid #dedede;
+  border-right: 1px solid #bdbdbd;
   color: #f0f0f0;
   text-shadow: none;
-  background-color: #3b3b3b;
-}
-
-#sidebar ul {
-  margin: 0;
+  background-color: #f2f5f7;
 }
 
 #sidebar section {
@@ -95,39 +135,54 @@ nav a {
 }
 
 #sidebar h2 {
-  color: #595959;
+  color: #838383;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.34);
-  margin: 0;
+  margin: 20px 0 0;
   font-weight: 100;
 }
 
-#sidebar nav a {
+.goal_list {
+  margin-top: 20px;
+}
+
+#sidebar nav a{
   display: block;
   padding: 8px 12px;
   margin: 0;
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-bottom: none;
+  -moz-box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  color: #6e6e6e;
+  cursor: pointer;
+}
 
-  background-color: #464646;
-  border: 1px solid #363636;
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  color: #959595;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  text-shadow: 0 -1px 0 black;
+#sidebar nav a:first-of-type{
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+
+#sidebar nav a:last-of-type {
+  border-bottom: 1px solid #bdbdbd;
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+
+#sidebar .goal_list a {
+  padding-left: 36px;
 }
 
 #main_content {
   margin-left: 280px;
   padding: 100px 60px 60px;
   height: 100%;
-  border-left: 1px solid #060606;
   z-index: 10;
   position: relative;
-  -moz-box-shadow: -4px 0 32px rgba(0, 0, 0, 0.45);
-  -webkit-box-shadow: -4px 0 32px rgba(0, 0, 0, 0.45);
-  box-shadow: -4px 0 32px rgba(0, 0, 0, 0.45);
 }
 
 #main_content.dashboard {
@@ -142,14 +197,14 @@ dt:first-of-type {
   margin-top: 0;
 }
 
+#inspire {
+  margin: 0 60px;
+}
+
 section#profile {
   margin-bottom: 40px;
-  border-top: 1px solid #d0d0d0;
+  padding-bottom: 40px;
   border-bottom: 1px solid #d0d0d0;
-  -moz-box-shadow: inset 0 1px 0 #ffffff;
-  -webkit-box-shadow: inset 0 1px 0 #ffffff;
-  box-shadow: inset 0 1px 0 #ffffff;
-  background-color: #f9f9f9;
 }
 
 .profile_pic {
@@ -173,18 +228,27 @@ section#profile {
 }
 
 #profile dl {
-  margin: 0;
-  width: 400px;
+  margin: 20px 30px;
   font-size: .9em;
-  padding-right: 20px;
-  border-right: 1px solid #cfd0cf;
   display: inline-block;
+  width: 60%;
+}
+
+#profile dt {
+  font-size: 1.1em;
+  font-weight: 200;
+  margin: 0;
+  color: #5e5e5e;
+}
+
+#profile dd {
+  font-size: 1.3em;
+  margin: 0 0 10px;
 }
 
 #profile section {
   display: inline-block;
-  padding-left: 40px;
-  width: 40%;
+  padding: 10px 40px 10px;
   vertical-align: top;
 }
 

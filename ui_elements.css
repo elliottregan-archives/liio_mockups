@@ -72,19 +72,14 @@ dd {
   font-style: normal;
 }
 
-footer {
-  background-color: #ebebeb;
-  padding: 20px 40px;
-  border-top: 1px solid #c6c6c6;
-}
-
-footer p {
-  margin-right: 300px;
-}
-
 .block.half {
   display: inline-block;
-  width: 48%;
+  width: 450px;
+  margin-right: 40px;
+}
+
+.block.half:first-of-type {
+  margin-right: 0;
 }
 
 .tab_set {

@@ -24,52 +24,6 @@ nav#goal_steps {
   right: 0;
 }
 
-#priorities ul li {
-  -webkit-transition: opacity 500ms ease-in-out 0s;
-  opacity: .2;
-}
-
-#priorities:hover ul li {
-  opacity: .6;
-}
-
-#priorities ul li:hover {
-  -webkit-transition: opacity 200ms ease-in-out 0s;
-  opacity: 1;
-}
-
-.goal_list img {
-  width: 48px; height: 48px;
-  padding: 4px;
-  float: left;
-  margin: 5px;
-  border: 1px solid #cdcdcd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #b3b3b3;
-  opacity: .2;
-  cursor: pointer;
-  -webkit-transition: opacity 500ms ease-in-out 0s;
-}
-
-.goal_list img:first-of-type {
-  margin-left: 0;
-}
-
-#goals:hover .goal_list img {
-  opacity: .6;
-  -webkit-transition: opacity 200ms ease-in-out 0s;
-  
-}
-
-#goals .goal_list img:hover {
-  opacity: 1;
-}
-
-#goals .goal_list li {
-  display: inline-block;
-}
 /*
 img.ski {
   border-color: rgba(17, 143, 243, 0.68);
@@ -102,6 +56,8 @@ img.sunscreen {
   display: block;
   position: relative;
   padding-left: 40px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 #priorities input[type=checkbox] ~ label::before {
