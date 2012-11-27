@@ -115,7 +115,7 @@ img.sunscreen {
   border-bottom: 1px solid #969696;
   height: 200px;
   overflow-y: scroll;
-  background-color: #aaaaaa;
+  background-color: #d4d4d4;
   -moz-box-shadow: 0 1px 0 #ffffff, inset 0 1px 6px rgba(0, 0, 0, 0.46);
   -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 6px rgba(0, 0, 0, 0.46);
   box-shadow: 0 1px 0 #ffffff, inset 0 1px 6px rgba(0, 0, 0, 0.46);
@@ -125,34 +125,34 @@ img.sunscreen {
   display: block;
   width: 100%;
   height: auto;
-  border: 1px solid #0b0b0b;
+  border: 1px solid #929292;
   border-top: none;
   padding: 8px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #2e2e2e;
+  background-color: #ebebeb;
   -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
   cursor: pointer;
-  color: #e8e8e8;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.47);
+  color: #383838;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.47);
 }
 
 #focus_areas li li:hover {
-  background-color: #3a3a3a;
+  background-color: #f5f5f5;
 }
 
 #focus_areas li li:active {
-  background-color: #191919;
+  background-color: #dddddd;
   -moz-box-shadow: inset 0 1px 3px black;
   -webkit-box-shadow: inset 0 1px 3px black;
   box-shadow: inset 0 1px 3px black;
 }
 
 #focus_areas li li:first-of-type {
-  border-top: 1px solid #0b0b0b;
+  border-top: 1px solid #929292;
 }
 
 #focus_areas li li:last-of-type {
