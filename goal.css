@@ -39,6 +39,14 @@ img.sunscreen {
 
 #stats {
   width: 100%;
+  background-color: #48a5ec;
+  color: #ffffff;
+  padding: 20px;
+}
+
+#stats h2 {
+  color: #ffffff;
+  text-shadow: none;
 }
 
 #notifications ul {
@@ -46,9 +54,27 @@ img.sunscreen {
 }
 
 #notifications li {
-  padding: 4px 8px;
+  padding: 4px 0;
   margin: 8px 0;
-  border-left: 3px solid #c60c0c;
+  position: relative;
+}
+
+#notifications li.alert {
+  color: #ffffff;
+  background-color: #ee8b53;
+  padding: 8px;
+}
+
+#notifications li.alert .list_buttons {
+  background-color: rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+#notifications li.dismissed {
+  color: #ee8b53;
 }
 
 #priorities label {

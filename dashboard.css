@@ -41,6 +41,8 @@ ul {
   display: inline-block;
   margin: 0;
   font-size: .8em;
+    color: #064778;
+  
 }
 
 #stats figcaption {
@@ -49,6 +51,7 @@ ul {
 }
 
 .big_text {
-  font-size: 4em;
+  font-size: 6em;
   padding-left: 20px;
+  color: #ffffff;
 }

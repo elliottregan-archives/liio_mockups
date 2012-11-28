@@ -1,6 +1,5 @@
 html {
   color: #303030;
-  text-shadow: 0 1px 2px #ffffff;
   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   width: 100%;
 }
@@ -199,8 +198,11 @@ dt:first-of-type {
 
 section#profile {
   margin-bottom: 40px;
-  padding-bottom: 40px;
   border-bottom: 1px solid #d0d0d0;
+  background-color: #52aa56;
+  color: #ffffff;
+  text-shadow: none;
+  padding: 20px;
 }
 
 .profile_pic {
@@ -219,33 +221,62 @@ section#profile {
   font-size: 1.6em;
 }
 
-#profile {
-  height: 250px;
-}
-
 #profile dl {
   margin: 20px 30px;
-  font-size: .9em;
   display: inline-block;
   width: 60%;
 }
 
 #profile dt {
   font-size: 1.1em;
-  font-weight: 200;
   margin: 0;
-  color: #5e5e5e;
+  font-weight: 200;
+  color: #4d4d4d;
 }
 
 #profile dd {
   font-size: 1.3em;
   margin: 0 0 10px;
+  color: #efefef;
+  font-weight: 200;
 }
 
 #profile section {
   display: inline-block;
   padding: 10px 40px 10px;
   vertical-align: top;
+}
+
+section#notifications {
+  
+}
+
+.list_buttons {
+  float: right;
+}
+
+.list_buttons button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: inline-block;
+  opacity: .1;
+}
+
+li:hover .list_buttons button {
+  opacity: 1;
+}
+
+.list_buttons button.dismiss {
+  background-size: 80%;
+  background: url(images/Bell-mute.png) no-repeat center center;
+  padding: 4px;
+  vertical-align: top;
+}
+
+.list_buttons button.view {
+  background-size: 70%;
+  background: url(images/in.png) no-repeat center top;
 }
 
 section {
