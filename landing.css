@@ -25,7 +25,13 @@ h2 {
 }
 
 header {
-  height: 90px;
+  height: 110px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.76);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.67);
 }
 
 nav {
@@ -115,7 +121,7 @@ nav li a:hover {
 }
  
 .content {
-	margin: 20px auto;
+	margin: 0 auto;
 } 
 
 .wrapper {
@@ -129,13 +135,13 @@ nav li a:hover {
   border: 1px solid #838074;
   border-left: none;
   border-right: none;
-  margin: 0px auto;
+  margin: 110px auto 0;
   color: #ffffff;
   -moz-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.51);
   -webkit-box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.51);
   box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.51);
-  background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%), url(crew.jpeg) left bottom #7a92a1;
-  background: -webkit-gradient(linear, left bottom, right bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15))), url(crew.jpeg) left bottom #7a92a1;
+  background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%) 0 bottom, url(crew.jpeg) left bottom #7a92a1;
+  background: -webkit-gradient(linear, left bottom, right bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15))) 0 bottom, url(crew.jpeg) left bottom #7a92a1;
 }
 
 .hero h2, .hero p {
@@ -175,12 +181,13 @@ nav li a:hover {
 
 .hero_screenshot {
   width: 300px;
-  margin: 40px;
+  margin: 80px 40px;
   position: absolute;
+  top: 60px;
 }
 
 .hero_text {
-  margin: 40px 100px 400px;
+  margin: 100px 100px 400px;
   text-align: right;
 }
 
@@ -305,18 +312,18 @@ h3 {
 
 }
 
-.features h3 {
+/*.features h3 {
   border-left: 4px solid #9b0d0d;
   padding-left: 14px;
-}
-
+}*/
+/*
 .right h3 {
   background-position: 0 center;
   background-position-x: right;
   padding-right: 14px;
   border-left: none;
   border-right: 4px solid #9b2621;
-}
+}*/
 
 .features p {
 	color: #737373;
