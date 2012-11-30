@@ -114,7 +114,7 @@ nav a {
   position: fixed;
   padding: 10px 20px;
   border-right: 1px solid #bdbdbd;
-  color: #f0f0f0;
+  color: #f0f0f0;z-index
   text-shadow: none;
   background-color: #f2f5f7;
 }
@@ -196,48 +196,58 @@ dt:first-of-type {
   margin: 0 60px;
 }
 
-section#profile {
+.green.box {
   margin-bottom: 40px;
   border-bottom: 1px solid #d0d0d0;
   background-color: #52aa56;
   color: #ffffff;
   text-shadow: none;
   padding: 20px;
+  border: 1px solid #3d9842;
+  -moz-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
+  -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
 }
 
 .profile_pic {
-  float: left;
-  margin: 20px;
+  position: relative;
 }
 
 .profile_pic img {
-  width: 180px;
-  height: 180px;
+  width: 200px;
   background-color: #cbcbcb;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  border: 1px solid #40873b;
+  -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
 }
 
-.profile_pic figcaption {
-  text-align: center;
-  font-size: 1.6em;
+#profile .green.box {
+  padding-left: 180px;
+}
+
+#profile h1 {
+  margin-left: 30px;
 }
 
 #profile dl {
   margin: 20px 30px;
-  display: inline-block;
-  width: 60%;
 }
 
 #profile dt {
   font-size: 1.1em;
   margin: 0;
-  font-weight: 200;
-  color: #4d4d4d;
+  font-weight: 400;
+  color: #206623;
 }
 
 #profile dd {
   font-size: 1.3em;
   margin: 0 0 10px;
-  color: #efefef;
+  color: #d1f0d2;
   font-weight: 200;
 }
 
@@ -251,44 +261,145 @@ section#notifications {
   
 }
 
+section#notifications li {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .list_buttons {
   float: right;
 }
 
 .list_buttons button {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   border: none;
   display: inline-block;
   opacity: .1;
+  margin: 6px;
+  background-size: 100%;
+  
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 li:hover .list_buttons button {
+  opacity: .6;
+  
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+li .list_buttons button:hover {
   opacity: 1;
 }
 
 .list_buttons button.dismiss {
-  background-size: 80%;
   background: url(images/Bell-mute.png) no-repeat center center;
-  padding: 4px;
-  vertical-align: top;
 }
 
 .list_buttons button.view {
-  background-size: 70%;
-  background: url(images/in.png) no-repeat center top;
+  background: url(images/in.png) no-repeat center center;
+  
+}
+
+li.dismissed button.dismiss {
+  display: none;
 }
 
 section {
   margin-bottom: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#profile section:first-of-type {
-  padding-left: 0;
+.block {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.side.block {
+  width: 40%;
+}
+
+.main.block {
+  width: 59%;
 }
 
 .inline {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
+}
+
+#pie_chart {
+  width: 400px;
+  height: 200px;
+}
+
+figure {
+  padding: 0 0;
+  margin: 0 auto;
+}
+
+#network img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #dddedd;
+}
+
+li.new {
+  border: 1px solid #dddedd;
+}
+
+#network li.new {
+  width: 50px; height: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#network li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2em;
+  color: #949494;
+}
+
+#stats figure {
+  width: 32%;
+  display: inline-block;
+  margin: 0;
+  font-size: .8em;
+    color: #ffffff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#stats figcaption {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #11578e;
+}
+
+.big_text {
+  font-size: 6em;
+  padding-left: 20px;
 }

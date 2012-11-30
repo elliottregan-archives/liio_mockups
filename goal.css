@@ -37,32 +37,47 @@ img.sunscreen {
   border-color: #30ce15;
 }*/
 
-#stats {
+.box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.blue.box {
   width: 100%;
-  background-color: #48a5ec;
   color: #ffffff;
   padding: 20px;
+  border: 1px solid #3283c0;
+  -moz-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.55);
+  -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.55);
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.55);
+  background-color: rgb(72, 164, 236);
 }
 
 #stats h2 {
-  color: #ffffff;
+  color: #939393;
   text-shadow: none;
 }
 
 #notifications ul {
-
+  width: 100%;
 }
 
 #notifications li {
   padding: 4px 0;
   margin: 8px 0;
   position: relative;
+  width: 100%;
 }
 
 #notifications li.alert {
   color: #ffffff;
   background-color: #ee8b53;
   padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 0 1px rgb(255, 255, 255);
+  -webkit-box-shadow: inset 0 0 1px rgb(255, 255, 255);
+  box-shadow: inset 0 0 1px rgb(255, 255, 255);
 }
 
 #notifications li.alert .list_buttons {
@@ -75,6 +90,13 @@ img.sunscreen {
 
 #notifications li.dismissed {
   color: #ee8b53;
+  font-weight: 200;
+}
+
+#notifications blockquote {
+  color: #efa77e;
+  font-size: 1.1em;
+  font-style: italic;
 }
 
 #priorities label {
