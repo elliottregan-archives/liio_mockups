@@ -32,4 +32,16 @@ $(document).ready( function() {
 //    }
 //  });
 
+
+  $('#cal, #col').change(function() {
+    if ($('#cal')[0].checked == true) {
+      $('#stats').fadeOut();
+      $('#photo_grid').delay(400).fadeIn();
+    }
+    else {
+      $('#stats').delay(400).fadeIn();
+      $('#photo_grid').fadeOut();
+    }
+  });
+
 });

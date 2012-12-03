@@ -9,7 +9,6 @@
   <![endif]-->
   
   <link rel="stylesheet" href="ui_elements.css" type="text/css" />
-  <link rel="stylesheet" href="dashboard.css" type="text/css" />
   
   <link rel="stylesheet" href="goal.css" type="text/css" />
   <link rel="stylesheet" href="global.css" type="text/css" />
@@ -137,63 +136,76 @@
   </div>
   <div class="main block"> 
     <section>
-      <h2>My Stats</h2>
-<!--      <div class="blue box">
+    
+      <div class='switch'>
+        <input id="cal" name="view" type="radio">
+        <label for="cal">Right Brain</label>
+        <input id="col" name="view" type="radio" checked >
+        <label for="col">Left Brain</label>
+        <span class="switch-button"></span>
+      </div>
+      
+      <h2>My Inspiration</h2>
+      
       <div id="stats">
+        <div class="blue box">
+      
             <figure>
-                        <figcaption>Goals I've Started</figcaption>
-                        <span class="big_text">5</span> goals
-                      </figure>
-                      
-                      <figure>
-                        <figcaption>Goals I've completed</figcaption>
-                        <span class="big_text">2</span> goals
-                      </figure>
-                      
-                      
-                      <figure>
-                        <figcaption>Weeks Using Liio</figcaption>
-                        <span class="big_text">5</span> weeks
-                      </figure>
-                      
-                      <div id="progress_graph" class="graph" width='400' height='200' ></div>
+              <figcaption>Goals I've Started</figcaption>
+              <span class="big_text">5</span> goals
+            </figure>
+              
+            <figure>
+              <figcaption>Goals I've completed</figcaption>
+              <span class="big_text">2</span> goals
+            </figure>
+            
+            
+            <figure>
+              <figcaption>Weeks Using Liio</figcaption>
+              <span class="big_text">5</span> weeks
+            </figure>
+            
+            <div id="progress_graph" class="graph" width='400' height='200' ></div>
           </div>
           
           
-        </div>-->
-        <div class="white box">
-          <ul class="inspiration">
-            <li>
-              <figure>
-                <img src="img/canyon.jpg" alt="" />
-                <figcaption>Image 1</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="img/ironman.jpg" alt="" />
-                <figcaption>Image 2</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="double">
-                <img src="img/climber.jpg" alt="" />
-                <figcaption>Image 3</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="img/stars.jpg" alt="" />
-                <figcaption>Image 4</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="img/room.jpg" alt="" />
-                <figcaption>Image 5</figcaption>
-              </figure>
-            </li>
-          </ul>
+        </div>
+        <div id="photo_grid">
+          <div class="white box">
+            <ul class="inspiration">
+              <li>
+                <figure>
+                  <img src="img/canyon.jpg" alt="" />
+                  <figcaption>Image 1</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/ironman.jpg" alt="" />
+                  <figcaption>Image 2</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure class="double">
+                  <img src="img/climber.jpg" alt="" />
+                  <figcaption>Image 3</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/stars.jpg" alt="" />
+                  <figcaption>Image 4</figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img src="img/room.jpg" alt="" />
+                  <figcaption>Image 5</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
         </div>
     </section>
   </div>  
