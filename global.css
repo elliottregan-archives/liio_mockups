@@ -385,6 +385,7 @@ ul {
 #stats figure {
   width: 32%;
   margin: 0;
+  display: inline-block;
   font-size: .8em;
   color: #ffffff;
   -webkit-box-sizing: border-box;
@@ -405,6 +406,10 @@ ul {
 }
 
 /* @group Inspiration Grid */
+
+#photo_grid {
+  display: none;
+}
 
 ul.inspiration {
    list-style: none;
