@@ -199,7 +199,6 @@ dt:first-of-type {
 .green.box {
   margin-bottom: 40px;
   border-bottom: 1px solid #d0d0d0;
-  background-color: #52aa56;
   color: #ffffff;
   text-shadow: none;
   padding: 20px;
@@ -207,6 +206,8 @@ dt:first-of-type {
   -moz-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
   -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
   box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
+  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0) 100%) #52aa56;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.13)), to(rgba(255, 255, 255, 0))) #52aa56;
 }
 
 .profile_pic {
@@ -383,17 +384,16 @@ ul {
 
 #stats figure {
   width: 32%;
-  display: inline-block;
   margin: 0;
   font-size: .8em;
-    color: #ffffff;
+  color: #ffffff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
 }
 
-#stats figcaption {
+#data figcaption {
   font-weight: bold;
   margin-bottom: 10px;
   color: #11578e;
@@ -402,4 +402,116 @@ ul {
 .big_text {
   font-size: 6em;
   padding-left: 20px;
+}
+
+ul.inspiration {
+   list-style: none;
+   padding: 0;
+   line-height: 0;
+   margin: 0;
+
+   -webkit-column-count: 3;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    3;
+   -moz-column-gap:      0px;
+   column-count:         3;
+   column-gap:           0px;
+
+}
+
+ul.inspiration figure h3, ul figure p  {
+  padding: 10px;
+}
+
+ul.inspiration li {
+  border: 1px solid #909090;
+  margin: 20px 10px;
+  overflow: hidden;
+}
+
+ul.inspiration li:first-of-type {
+  margin-top: 4px;
+}
+
+ul.inspiration figure {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 0;
+  z-index: 10;
+  -moz-box-shadow: inset -4px 0 0 #ffffff;
+  -webkit-box-shadow: inset -4px 0 0 #ffffff;
+  box-shadow: inset -4px 0 0 #ffffff;
+  overflow: hidden;
+  text-align: center;
+  background: url(noise.png) #dcdcdc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul.inspiration figure.double {
+ width: 100%;
+}
+
+ul.inspiration figure img {
+  z-index: 10;
+  height: auto;
+  width: 110%;
+  -moz-box-shadow: 0 1px 4px black;
+  -webkit-box-shadow: 0 1px 4px black;
+  box-shadow: 0 1px 4px black;
+}
+
+ul.inspiration figure figcaption {
+
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 4px;
+  bottom: 0;
+  left: 0;
+  font-size: .8em;
+  line-height: 1.1em;
+  z-index: 20;
+  border-top: 1px solid rgba(255, 255, 255, 0.59);
+  -moz-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.28);
+  -webkit-box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.28);
+  color: #252525;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.49);
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.82);
+  
+  opacity: 0;
+}
+
+ul.inspiration figure:hover figcaption {
+  opacity: 1;
+}
+
+@media (max-width: 1400px) {
+  ul.inspiration {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 1000px) {
+  ul.inspiration {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
 }
