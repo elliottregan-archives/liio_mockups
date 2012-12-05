@@ -1,6 +1,5 @@
 button {
   cursor: pointer;
-  font-family: Quicksand, sans-serif;
 }
 
 button.glassy {
@@ -80,12 +79,13 @@ dl {
 }
 
 dt {
-  font: 1.2em Quicksand, sans-serif;
+  font-size: 1.2em;
 }
 
 dd {
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
 .block.half {
