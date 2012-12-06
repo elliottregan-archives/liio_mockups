@@ -25,7 +25,7 @@ h1 {
 
 h2 {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.51);
-  font-weight: 100;
+  font-weight: 400;
   font-style: normal;
   margin-top: 0;
   font-size: 2.2em;
@@ -360,18 +360,15 @@ figure {
   margin: 0 auto;
 }
 
-#network img {
+#help img {
     width: 50px;
     height: 50px;
     border: 1px solid #dddedd;
 }
 
-li.new {
-  border: 1px solid #dddedd;
-}
-
-#network li.new {
+#help li.new {
   width: 50px; height: 50px;
+  border: 1px solid #dddedd;
 }
 
 ul {
@@ -379,7 +376,7 @@ ul {
   padding: 0;
 }
 
-#network li {
+#help li {
   display: inline-block;
   vertical-align: top;
   text-align: center;

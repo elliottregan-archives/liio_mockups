@@ -59,8 +59,36 @@ img.sunscreen {
   text-shadow: none;
 }
 
-#notifications ul {
-  width: 100%;
+section h2 {
+  padding: 4px 10px;
+  color: #ffffff;
+  text-shadow: none;
+  margin: 0;
+}
+
+section.green h2 {
+  background-color: #597e27;
+}
+
+section.green > *:not(h2) {
+  border-bottom: 4px solid #597e27;
+}
+
+section.blue h2 {
+  background-color: #62a8e1;
+}
+
+section.blue > *:not(h2) {
+  border-bottom: 4px solid #67b0ea;
+}
+
+section > *:not(h2) {
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fafafa;
+  margin: 0;
 }
 
 #notifications li {
@@ -71,17 +99,11 @@ img.sunscreen {
 }
 
 #notifications li.alert {
-  color: #ffffff;
-  background-color: #ee8b53;
-  padding: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 0 1px rgb(255, 255, 255);
-  -webkit-box-shadow: inset 0 0 1px rgb(255, 255, 255);
-  box-shadow: inset 0 0 1px rgb(255, 255, 255);
+  color: #b82323;
+  font-weight: 400;
 }
 
 #notifications li.alert .list_buttons {
-  background-color: rgba(0, 0, 0, 0.12);
   position: absolute;
   top: 0;
   right: 0;
@@ -89,12 +111,11 @@ img.sunscreen {
 }
 
 #notifications li.dismissed {
-  color: #ee8b53;
   font-weight: 200;
 }
 
 #notifications blockquote {
-  color: #efa77e;
+  color: #8e8e8e;
   font-size: 1.1em;
   font-style: italic;
 }
