@@ -29,11 +29,6 @@
       <div class="header_logo inset"></div>
       <div class="header_logo"></div>
     </div>
-    
-    <figure class="profile_pic">
-      <img src="images/portrait.jpg" alt="profile_pic" />
-      <figcaption>Elliott</figcaption>
-    </figure>
   
     <nav>
       <a class="current">Dashboard</a>
@@ -96,9 +91,45 @@
   </div>  <!--End Sidebar-->
     
   <div id="main_content" class="dashboard">
+    <header>
+      
+      <ul>
+        <li>How Do I...</li>
+        <li>Contact Liio</li>
+      </ul>
+      
+      <figure class="profile_pic">
+        <img src="images/portrait.jpg" alt="profile_pic" />
+        <figcaption>Elliott</figcaption>
+      </figure>
+
+    </header>
+
+      <div id="help" class="row">
+        <section class="col-1-2">
+          <h2>People Helping Me</h2>
+          <ul>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li class="new">+</li>
+          </ul>
+        </section>
+        <section class="col-1-2">
+          <h2>People I'm Helping</h2>
+          <ul>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li class="new">+</li>
+          </ul>
+        </section>
+      </div>
 
       <div id="mission" class="row">
-        <section class="col-1-2 green">
+        <section class="col-1-2 color green">
           <h2>Mission</h2>
           <dl id="inspire">
             <dt>My Mission Statement</dt>
@@ -110,7 +141,7 @@
           </dl>
         </section>
         
-        <section id="notifications" class="col-1-2 blue">
+        <section id="notifications" class="col-1-2 color blue">
           <h2>Notifications</h2>
           <ul>
             <li class="alert">
@@ -139,43 +170,19 @@
           </ul>
         </section>
       </div>
-      
     
-    <section id="help">
-      <div class="col-1-2">
-        <h2>People Helping Me</h2>
-        <ul>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li class="new">+</li>
-        </ul>
-      </div>
-      <div class="col-1-2">
-        <h2>People I'm Helping</h2>
-        <ul>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li><img src="about-icon.svg" alt="profile_pic" /></li>
-          <li class="new">+</li>
-        </ul>
-      </div>
-    </section>
-    
+    <button class="glassy new">+</button>
+     <div class='switch'>
+       <input id="cal" name="view" type="radio" checked >
+       <label for="cal">My Inspiration</label>
+       <input id="col" name="view" type="radio">
+       <label for="col">My Statistics</label>
+       <span class="switch-button"></span>
+       
+     </div> 
     
     <section>
-    
-      <div class='switch'>
-        <input id="cal" name="view" type="radio">
-        <label for="cal">My Inspiration</label>
-        <button class="glassy new">+</button>
-        <input id="col" name="view" type="radio" checked >
-        <label for="col">My Statistics</label>
-        <span class="switch-button"></span>
-      </div>
-      
+          
       <div id="stats">
         <div class="white box">
       

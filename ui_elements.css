@@ -75,29 +75,6 @@ button.right {
   margin: 10px 20px;
 }
 
-dl {
-}
-
-dt {
-  font-size: 1.2em;
-}
-
-dd {
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
-}
-
-.block.half {
-  display: inline-block;
-  width: 400px;
-  margin-right: 40px;
-}
-
-.block.half:first-of-type {
-  margin-right: 0;
-}
-
 .tab_set button {
   padding: 15px 26px 12px;
   margin: 0;

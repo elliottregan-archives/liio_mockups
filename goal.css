@@ -59,10 +59,22 @@ img.sunscreen {
   text-shadow: none;
 }
 
+section {
+  margin-bottom: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 section h2 {
-  padding: 4px 10px;
-  color: #ffffff;
+  color: #515151;
   text-shadow: none;
+  margin: 0 0 20px;
+}
+
+section.color h2 {
+  color: #f7f7f7;
+  padding: 4px 10px;
   margin: 0;
 }
 
@@ -82,13 +94,15 @@ section.blue > *:not(h2) {
   border-bottom: 4px solid #67b0ea;
 }
 
-section > *:not(h2) {
+#main_content section.color > *:not(h2) {
   padding: 10px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #fafafa;
-  margin: 0;
+  margin: 0;/*
+  border-right: 1px solid #efefef;
+  border-left: 1px solid #efefef;*/
 }
 
 #notifications li {
@@ -207,6 +221,10 @@ section > *:not(h2) {
   cursor: pointer;
   color: #383838;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.47);
+}
+
+#focus_areas li li.selected {
+  background: url(images/check.png) no-repeat right center;
 }
 
 #focus_areas li li:hover {
