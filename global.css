@@ -602,7 +602,7 @@ ul.inspiration figure .edit:after  {
 .switch {
   position: relative;
 	width: 50%;
-  line-height: 1em;
+  line-height: .6em;
   
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -624,7 +624,7 @@ ul.inspiration figure .edit:after  {
 	
 	float: left;
 	width: 50%;
-	margin: 20px 0;
+	margin: 10px 0;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -639,7 +639,7 @@ ul.inspiration figure .edit:after  {
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 	cursor: pointer;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 200;
 }
 
@@ -653,18 +653,15 @@ ul.inspiration figure .edit:after  {
 	left: 0;
 	z-index: 1;
   width: 50%;
-  -webkit-border-radius: 2px 2px 0 0;
-	-moz-border-radius: 2px 2px 0 0;
-	border-radius: 2px 2px 0 0;
 	
 	-webkit-transition: all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	-moz-transition:    all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	-ms-transition:     all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	-o-transition:      all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	transition:         all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-  border-top: 4px none #333;
+	
   background-color: #62a8e1;
-  height: 70px;
+  height: 50px;
 }
 
 .switch input:last-of-type:checked ~ .switch-button {
