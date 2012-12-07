@@ -27,7 +27,7 @@ h2 {
   font-weight: 300;
   font-style: normal;
   margin-top: 0;
-  font-size: 2.2em;
+  font-size: 1.6em;
   color: #7e7e7e;
 }
 
@@ -45,22 +45,23 @@ a {
 }
 
 header {
-  background-color: #454545;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  color: #e3e3e3;
-  padding: 10px 40px;
+  color: #f4f4f4;
+  padding: 0px 40px;
   border-bottom: 4px solid #141414;
   
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  background: url(images/subtle_carbon.png) #454545;
 }
 
 .profile_pic {
-
+  position: absolute;
+  top: 10px;
 }
 
 .profile_pic img {
@@ -201,8 +202,7 @@ header li {
 }
 
 #sidebar .scroll_area {
-  height: 60%;
-  padding-bottom: 100px;
+  height: 80%;
   overflow-y: hidden;
 }
 
@@ -244,8 +244,8 @@ header li {
   height: 100%;
   z-index: 10;
   position: relative;
-  background-color: #ffffff;
   border-left: 1px solid #bdbdbd;
+  background: url(h) #ffffff;
 }
 
 #main_content.dashboard {
@@ -266,20 +266,6 @@ dd {
   font-weight: 200;
   font-style: normal;
   margin: 0;
-}
-
-.green.box {
-  margin-bottom: 40px;
-  border-bottom: 1px solid #d0d0d0;
-  color: #ffffff;
-  text-shadow: none;
-  padding: 20px;
-  border: 1px solid #3d9842;
-  -moz-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
-  -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
-  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
-  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0) 100%) #52aa56;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.13)), to(rgba(255, 255, 255, 0))) #52aa56;
 }
 
 section#notifications li {
@@ -382,6 +368,7 @@ ul {
   line-height: 50px;
   font-size: 2em;
   color: #949494;
+  height: 56px;
 }
 
 #stats {
@@ -416,6 +403,12 @@ ul {
 
 #stats {
   display: none;
+}
+
+#insp_prog {
+  border-top: 4px solid #4094da;
+  margin-top: 70px;
+  background-color: #fafbfa;
 }
 
 ul.inspiration {
@@ -659,7 +652,7 @@ ul.inspiration figure .edit:after  {
 	position: absolute;
 	left: 0;
 	z-index: 1;
-  width: 270px;
+  width: 50%;
   -webkit-border-radius: 2px 2px 0 0;
 	-moz-border-radius: 2px 2px 0 0;
 	border-radius: 2px 2px 0 0;
@@ -676,7 +669,6 @@ ul.inspiration figure .edit:after  {
 
 .switch input:last-of-type:checked ~ .switch-button {
 	left: 50%;
-	width: 250px;
 }
 
 /* @end */
