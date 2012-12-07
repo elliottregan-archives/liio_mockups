@@ -24,8 +24,7 @@ h1 {
 }
 
 h2 {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.51);
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   margin-top: 0;
   font-size: 2.2em;
@@ -54,6 +53,37 @@ header {
   color: #e3e3e3;
   padding: 10px 40px;
   border-bottom: 4px solid #141414;
+  
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.profile_pic {
+
+}
+
+.profile_pic img {
+  width: 60px;
+  float: left;
+  background-color: #cbcbcb;
+  border: 1px solid #40873b;
+  -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.profile_pic:after {
+  content: '\a';
+  display: block;
+  clear: both;
+}
+
+.profile_pic figcaption {
+  display: block;
+  margin: 0 80px;
+  line-height: .9em;
+  font-size: 2.0em;
 }
 
 header ul {
@@ -62,6 +92,7 @@ header ul {
 
 header li {
   display: inline-block;
+  padding: 0 20px;
 }
 
 .header_logo {
@@ -72,10 +103,6 @@ header li {
   position: absolute;
   top: 10px;
   z-index: 10px;
-}
-
-#sidebar:hover .header_logo:not(.inset) {
-  opacity: 1;
 }
 
 #priorities ul li {
@@ -94,16 +121,11 @@ header li {
 
 .goal_list img {
   width: 16px; height: 16px;
-  padding: 4px;
+  padding: 4px 0;
   position: absolute;
-  left: 4px;
-  top: 4px;
-  border: 1px solid #cdcdcd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #b3b3b3;
-  opacity: .6;
+  left: 5px;
+  top: 7px;
+  opacity: .4;
   -webkit-transition: opacity 500ms ease-in-out 0s;
 }
 
@@ -117,28 +139,19 @@ header li {
   
 }
 
+#goals .goal_list a:hover {
+  background-color: #fafafa;
+}
+
 #goals .goal_list li:hover img {
   opacity: 1;
 }
 
-nav a {
-  margin-left: 20px;
-}
-
 #sidebar {
   width: 240px; height: 100%;
   position: fixed;
   padding: 10px 0;
-  color: #f0f0f0;z-index
-  text-shadow: none;
-  background-color: #f2f5f7;
-}
-
-#sidebar {
-  width: 240px; height: 100%;
-  position: fixed;
-  padding: 10px 0;
-  color: #f0f0f0;z-index
+  color: #f0f0f0;
   text-shadow: none;
   background-color: #f2f5f7;
 }
@@ -160,32 +173,18 @@ nav a {
   margin-top: 20px;
 }
 
+#sidebar nav {
+  margin: 0;
+  padding: 0;
+}
+
 #sidebar nav a{
   display: block;
   padding: 8px 12px;
   margin: 0;
   position: relative;
-  background-color: #ffffff;
-  border: 1px solid #bdbdbd;
-  border-bottom: none;
-  -moz-box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  -webkit-box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 rgba(255, 255, 255, 0.15);
-  box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   color: #6e6e6e;
   cursor: pointer;
-}
-
-#sidebar nav a:first-of-type{
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
-}
-
-#sidebar nav a:last-of-type {
-  border-bottom: 1px solid #bdbdbd;
-  -webkit-border-radius: 0 0 3px 3px;
-  -moz-border-radius: 0 0 3px 3px;
-  border-radius: 0 0 3px 3px;
 }
 
 #sidebar .goal_list a {
@@ -194,7 +193,11 @@ nav a {
 
 #sidebar nav a.current {
   padding-right: 11px;
-  border-right: none;
+  background-color: #ffffff;
+  border-left: 4px solid #6d6e6d;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  margin-left: 10px;
 }
 
 #sidebar .scroll_area {
@@ -277,34 +280,6 @@ dd {
   box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.63);
   background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0) 100%) #52aa56;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.13)), to(rgba(255, 255, 255, 0))) #52aa56;
-}
-
-.profile_pic {
-
-}
-
-.profile_pic img {
-  width: 40px;
-  float: left;
-  background-color: #cbcbcb;
-  border: 1px solid #40873b;
-  -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
-  box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.25);
-}
-
-.profile_pic:after {
-  content: '\a';
-  display: block;
-  clear: both;
-  height: 10px;
-}
-
-.profile_pic figcaption {
-  display: block;
-  margin: 0 50px;
-  line-height: .9em;
-  font-size: 3.6em;
 }
 
 section#notifications li {
@@ -578,7 +553,6 @@ ul.inspiration figure:hover figcaption {
 }
 
 button.new {  
-  display: none;
   float: right;
 }
 
@@ -634,7 +608,7 @@ ul.inspiration figure .edit:after  {
 /* Switch */
 .switch {
   position: relative;
-	width: 500px;
+	width: 50%;
   line-height: 1em;
   
   -webkit-touch-callout: none;
@@ -657,13 +631,15 @@ ul.inspiration figure .edit:after  {
 	
 	float: left;
 	width: 50%;
-	margin-top: 20px;
+	margin: 20px 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 		
-	padding: 10px 0 20px 0;
+	padding: 10px 0 20px 10px;
 	text-align: left;
 	
 	color: #989898;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 	
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -671,11 +647,11 @@ ul.inspiration figure .edit:after  {
 	transition: all 0.3s ease-out;
 	cursor: pointer;
   font-size: 2em;
+  font-weight: 200;
 }
 
 .switch input:checked + label {
-	color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
+	color: #ffffff;
   cursor: default;
 }
 
@@ -683,28 +659,24 @@ ul.inspiration figure .edit:after  {
 	position: absolute;
 	left: 0;
 	z-index: 1;
-	padding: 2px;
-	
-	width: 210px;
-  -webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
+  width: 270px;
+  -webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
 	
 	-webkit-transition: all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	-moz-transition:    all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	-ms-transition:     all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	-o-transition:      all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
 	transition:         all 600ms cubic-bezier(0.190, 1.000, 0.220, 1.000);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.69);
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.69);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.69);
-  border-bottom: 3px solid #48aaf7;
-  background-color: #333333;
+  border-top: 4px none #333;
+  background-color: #62a8e1;
+  height: 70px;
 }
 
 .switch input:last-of-type:checked ~ .switch-button {
 	left: 50%;
-	width: 180px;
+	width: 250px;
 }
 
 /* @end */

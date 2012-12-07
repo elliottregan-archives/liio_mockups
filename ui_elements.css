@@ -185,8 +185,6 @@ input[type=radio] {
 
 input[type=radio] + label {
   display: inline-block;
-  font-style: normal;
-  font-weight: normal;
 }
 
 fieldset.two_column label, fieldset.two_column legend {
