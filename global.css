@@ -413,13 +413,13 @@ ul {
 
 ul.inspiration {
    list-style: none;
-   padding: 0;
+   padding: 14px 0;
    line-height: 0;
    margin: 0;
    clear: both;
 
    -webkit-column-count: 4;
-   -webkit-column-gap:   20px;
+   -webkit-column-gap:   30px;
    -moz-column-count:    4;
    -moz-column-gap:      20px;
    column-count:         4;
@@ -434,9 +434,10 @@ ul.inspiration figure h3, ul figure p  {
 ul.inspiration li {
   border: 1px solid #909090;
   overflow: hidden;
+  margin-top: 26px;
 }
 
-ul.inspiration li.new_insp, ul.inspiration li.new_insp ~ li {
+ul.inspiration li.new_insp, ul.inspiration li.new_insp + li {
   margin-top: 4px;
 }
 
