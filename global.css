@@ -712,4 +712,8 @@ ul.inspiration figure .edit:after  {
   -moz-box-sizing: border-box;
 }
 
+#focus_areas [class*='col-']:last-of-type {
+  padding-right: 40px;
+}
+
 /* @end */

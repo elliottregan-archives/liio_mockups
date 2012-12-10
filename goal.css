@@ -191,19 +191,12 @@ section.blue > *:not(h2) {
 #priorities input[type=checkbox]:checked ~ label::before {
   content: '✔';
   background-color: #87d31d;
-  border-color: #83be35;
+  border-color: #8fcc40;
 }
 
 #priorities input[type=checkbox] {
   position: absolute;
   left: -1000px;
-}
-
-#focus_areas li {
-  display: inline-block;
-  vertical-align: top;
-  width: 40%;
-  margin-right: 20px;
 }
 
 #focus_areas li ul {
@@ -218,7 +211,6 @@ section.blue > *:not(h2) {
 
 #focus_areas li li {
   display: block;
-  width: 100%;
   height: auto;
   border: 1px solid #929292;
   border-top: none;
