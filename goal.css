@@ -172,18 +172,17 @@ section.blue > *:not(h2) {
 
 #priorities input[type=checkbox] ~ label::before {
   content: '\a';
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background-color: #ffffff;
   position: absolute;
-  left: 0;
+  left: 5px;
   top: 2px;
   display: block;
   color: #ffffff;
-  text-shadow: 0 1px 1px #000000;
   text-align: center;
-  line-height: 30px;
-  border: 3px solid #5a5a5a;
+  line-height: 1.1em;
+  border: 1px solid #d6d6d6;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
@@ -191,22 +190,8 @@ section.blue > *:not(h2) {
 
 #priorities input[type=checkbox]:checked ~ label::before {
   content: '✔';
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  display: block;
-  color: #ffffff;
-  text-shadow: 4px 0 0 #464960;
-  text-align: center;
-  line-height: 5px;
-  font-size: 1.1em;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  border-radius: 1px;
-  background: -moz-linear-gradient(90deg, #494d66 0%, #2e3141 100%) #4a4d67;
-  background: -webkit-gradient(linear, left bottom, left top, from(#494d66), to(#2e3141)) #4a4d67;
+  background-color: #87d31d;
+  border-color: #83be35;
 }
 
 #priorities input[type=checkbox] {
