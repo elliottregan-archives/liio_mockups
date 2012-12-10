@@ -246,6 +246,7 @@ header li {
   position: relative;
   border-left: 1px solid #bdbdbd;
   background: url(h) #ffffff;
+  border-top: 2px solid #23272a;
 }
 
 #main_content.dashboard {
