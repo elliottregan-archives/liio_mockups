@@ -37,23 +37,6 @@ img.sunscreen {
   border-color: #30ce15;
 }*/
 
-.box {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.blue.box {
-  width: 100%;
-  color: #ffffff;
-  padding: 20px;
-  border: 1px solid #3283c0;
-  -moz-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.55);
-  -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.55);
-  box-shadow: inset 0 0 1px rgba(255, 255, 255, 0.55);
-  background-color: rgb(72, 164, 236);
-}
-
 #stats h2 {
   color: #939393;
   text-shadow: none;
@@ -80,12 +63,12 @@ section.color h2 {
 
 section.color.grey h2 {
   color: #676767;
-  border-bottom: 1px solid #dfdfdf;
   padding: 8px 0;
 }
 
-section.color.grey > *:not(h2) {
-  border-bottom: 1px solid #dfdfdf;
+#main_content section.color.grey > *:not(h2) {
+  background-color: white;
+  padding: 0;
 }
 
 section.green h2 {
@@ -119,9 +102,13 @@ section.blue > *:not(h2) {
 
 #notifications li {
   padding: 4px 0;
-  margin: 8px 0;
+  margin: 6px 0;
   position: relative;
   width: 100%;
+}
+
+#notifications li:first-of-type {
+  margin-top: 0;
 }
 
 #notifications li.alert {

@@ -245,8 +245,9 @@ header li {
   z-index: 10;
   position: relative;
   border-left: 1px solid #bdbdbd;
-  background: url(h) #ffffff;
+  
   border-top: 2px solid #23272a;
+  background-color: white;
 }
 
 #main_content.dashboard {
@@ -303,6 +304,8 @@ li:hover .list_buttons button {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
+  
+  background-size: 100%;
 }
 
 li .list_buttons button:hover {
@@ -311,10 +314,12 @@ li .list_buttons button:hover {
 
 .list_buttons button.dismiss {
   background: url(images/Bell-mute.png) no-repeat center center;
+  background-size: 100%;
 }
 
 .list_buttons button.view {
   background: url(images/in.png) no-repeat center center;
+  background-size: 100%;
   
 }
 
@@ -347,14 +352,11 @@ figure {
 }
 
 #help img {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #dddedd;
+  width: 100%;
 }
 
 #help li.new {
   width: 50px; height: 50px;
-  border: 1px solid #dddedd;
 }
 
 ul {
@@ -369,7 +371,12 @@ ul {
   line-height: 50px;
   font-size: 2em;
   color: #949494;
-  height: 56px;
+  border: 1px solid #dddedd;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  background: url(images/about-icon.svg) no-repeat center center;
+  background-size: 90%;
 }
 
 #stats {
@@ -594,6 +601,7 @@ ul.inspiration figure .edit:after  {
   display: inline-block;
   background-image: url(images/ic_edit.png);
   background-size: 100%;
+  -moz-background-size: 100%;
 }
 
 /* @end */
