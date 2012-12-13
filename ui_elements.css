@@ -129,10 +129,12 @@ nav.tab_set button:active {
 }
 
 label, legend {
-  margin: 4px 0 12px;
+  margin: 4px 0 12px -15px;
   display: block;
   color: #474747;
-  font-weight: bold;
+  font-weight: 600;
+  border-left: 3px solid #42a0f5;
+  padding: 4px 12px;
 }
 
 select {
@@ -149,8 +151,8 @@ input[type=text], textarea {
   padding: 12px 18px;
   font-size: 1em;
   color: #2c2c2c;
-  background: -moz-linear-gradient(90deg, #fdfdfd 76.2%, #f6f7f6 100%) #f7f7f7;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.762, #fdfdfd), to(#f6f7f6)) #f7f7f7;
+  background: -moz-linear-gradient(90deg, #f7fcfd 76.2%, #e4f3fd 100%) #f7f7f7;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0.762, #f7fcfd), to(#e4f3fd)) #f7f7f7;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

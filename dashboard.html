@@ -24,11 +24,23 @@
   
 </head>
 <body>
+  <header>
+    
+    <ul>
+      <li>User Manual</li>
+      <li>Contact Liio</li>
+    </ul>
+    
+    <div class="header_logo"></div>
+    
+    <figure class="profile_pic">
+      <img src="images/portrait.jpg" alt="profile_pic" />
+      <figcaption>Elliott</figcaption>
+    </figure>
+
+  </header>
+
   <div id="sidebar">
-    <div class="logo_group">
-      <div class="header_logo inset"></div>
-      <div class="header_logo"></div>
-    </div>
   
     <nav>
       <a class="current">Dashboard</a>
@@ -48,34 +60,13 @@
       <h2>This Week...</h2>
       <form action="">
         <ul>
-          <li>
-            <input type="checkbox" name="pri-01" id="pri-01" value="" />
-            <label for="pri-01">I will do cardio 4x this week</label>
-          </li>
-          <li>
-            <input type="checkbox" name="pri-02" id="pri-02" value="" />
-            <label for="pri-02">I will avoid conflict with my children</label>
-          </li>
-          <li>
-            <input type="checkbox" name="pri-03" id="pri-03" value="" />
-            <label for="pri-03">I will have no more than 2 desserts</label>
-          </li>
-          <li>
-            <input type="checkbox" name="pri-04" id="pri-04" value="" />
-            <label for="pri-04">I will eat green leafy vegetables 3x this week</label>
-          </li>
-          <li>
-            <input type="checkbox" name="pri-05" id="pri-05" value="" />
-            <label for="pri-05">I will avoid conflict with my children</label>
-          </li>
-          <li>
-            <input type="checkbox" name="pri-06" id="pri-06" value="" />
-            <label for="pri-06">I will have no more than 2 desserts</label>
-          </li>
-          <li>
-            <input type="checkbox" name="pri-07" id="pri-07" value="" />
-            <label for="pri-07">I will eat green leafy vegetables 3x this week</label>
-          </li>
+          <li>I will do cardio 4x this week</li>
+          <li>I will avoid conflict with my children</li>
+          <li>I will have no more than 2 desserts</li>
+          <li>I will eat green leafy vegetables 3x this week</li>
+          <li>I will avoid conflict with my children</li>
+          <li>I will have no more than 2 desserts</li>
+          <li>I will eat green leafy vegetables 3x this week</li>
         </ul>
       </form>
     </section>
@@ -84,31 +75,16 @@
     </div> 
     
     <aside id="support_links">
-      <a href="#">Settings</a>
-      <a href="#">Help</a>
-      <a href="#">Log Out</a>
+      <a href="#">Settings</a><a href="#">Help</a><a href="#">Log Out</a>
     </aside>
   
   </div>  <!--End Sidebar-->
     
   <div id="main_content" class="dashboard">
-    <header>
-      
-      <ul>
-        <li>User Manual</li>
-        <li>Contact Liio</li>
-      </ul>
-      
-      <figure class="profile_pic">
-        <img src="images/portrait.jpg" alt="profile_pic" />
-        <figcaption>Elliott</figcaption>
-      </figure>
-
-    </header>
 
       <div id="mission" class="row">
         <section class="col-1-2 color blue">
-          <h2>Mission</h2>
+          <h2>My Mission</h2>
           <dl id="inspire">
             <dt>My Mission Statement</dt>
             <dd>My mission is to figure out what my mission is. Then, once I've figured it out, I want to pursue it.</dd>
@@ -120,30 +96,22 @@
         </section>
         
         <section id="notifications" class="col-1-2 color blue">
-          <h2>Notifications</h2>
+          <h2>My Notifications</h2>
           <ul>
             <li class="alert">
-              <div class="list_buttons">
-                <button class="dismiss"></button>
-                <button class="view"></button>
-              </div>
+              <button class="txt">dismiss</button>
               Reminder: complete your Week 12 report
             </li>
             <li class="alert">
-              <div class="list_buttons">
-                <button class="dismiss"></button>
-                <button class="view"></button>
-              </div>ReminderL PLant your steps for Week 13</li>
+              <button class="txt">dismiss</button>
+              Reminder: Plant your steps for Week 13</li>
             <li class="dismissed">
-              <div class="list_buttons">
-                <button class="dismiss"></button>
-                <button class="view"></button>
-              </div>Dan wated to share this article with you [link]</li>
+              <button class="txt">dismiss</button>
+              Dan wated to share this article with you [link]</li>
             <li class="dismissed">
-              <div class="list_buttons">
-                <button class="dismiss"></button>
-                <button class="view"></button>
-              </div>Pam gave you a Kudos point and wanted to share this feedback:<blockquote>"Your team did great at the board presentation. Keep up the good work!"</blockquote>
+              <button class="txt">dismiss</button>
+              Pam gave you a Kudos point and wanted to share this feedback:
+              <blockquote>"Your team did great at the board presentation. Keep up the good work!"</blockquote>
             </li>
           </ul>
         </section>
@@ -153,7 +121,12 @@
         <section class="col-1-2 color grey">
           <h2>People Helping Me</h2>
           <ul>
-            <li><img src="about-icon.svg" alt="profile_pic" /></li>
+            <li>
+              <figure>
+                <img src="about-icon.svg" alt="profile_pic" />
+                <figcaption>First</figcaption>
+              </figure>
+            </li>
             <li><img src="about-icon.svg" alt="profile_pic" /></li>
             <li><img src="about-icon.svg" alt="profile_pic" /></li>
             <li><img src="about-icon.svg" alt="profile_pic" /></li>
@@ -229,7 +202,7 @@
                     </div>
                   </form>
                   <img src="img/canyon.jpg" alt="" />
-                  <figcaption>Image 1</figcaption>
+                  <figcaption>Title 1</figcaption>
                 </figure>
               </li>
               <li>
@@ -245,7 +218,7 @@
                     </div>
                   </form>
                   <img src="img/ironman.jpg" alt="" />
-                  <figcaption>Image 2</figcaption>
+                  <figcaption>Title 2</figcaption>
                 </figure>
               </li>
               <li>
@@ -261,7 +234,7 @@
                     </div>
                   </form>
                   <img src="img/climber.jpg" alt="" />
-                  <figcaption>Image 3</figcaption>
+                  <figcaption>Title 3</figcaption>
                 </figure>
               </li>
               <li>
@@ -277,7 +250,7 @@
                     </div>
                   </form>
                   <img src="img/stars.jpg" alt="" />
-                  <figcaption>Image 4</figcaption>
+                  <figcaption>Title 4</figcaption>
                 </figure>
               </li>
               <li>
@@ -293,7 +266,7 @@
                     </div>
                   </form>
                   <img src="img/room.jpg" alt="" />
-                  <figcaption>Image 5</figcaption>
+                  <figcaption>Title 5</figcaption>
                 </figure>
               </li>
             </ul>

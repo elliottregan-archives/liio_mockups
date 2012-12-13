@@ -31,20 +31,20 @@
   </div>
 
   <nav>
-    <a class="current">Dashboard</a>
+    <a>Dashboard</a>
   </nav>
   <div class="scroll_area">
   <section id="goals">
     <h2>Active Goals</h2>
     <nav class="goal_list">
       <a href="#"><img src="images/ski.svg" alt="Skiing" class="ski"/>Ski</a>
-      <a href="#"><img src="images/horse.svg" alt="Lancing" class="horse"/>Horse</a>
+      <a href="#" class="current"><img src="images/horse.svg" alt="Lancing" class="horse"/>Horse</a>
       <a href="#"><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" />Sunscreen</a>
       <a href="#"><img src="images/add_this.png" alt="new" />SPARK a new goal</a>
     </nav>
   </section>
     
-  <section id="priorities">
+<!--  <section id="priorities">
     <h2>This Week...</h2>
     <form action="">
       <ul>
@@ -63,7 +63,7 @@
 
       </ul>
     </form>
-  </section>
+  </section>-->
   
   
   </div> 
@@ -80,9 +80,29 @@
       <button>Home</button><button>Start</button><button class="current">Plan</button><button>Announce</button><button>Reflect</button><button>Kudos</button>
     </nav>
     
-    <h2>Plan your weekly goals</h2>
+    <h2>Plan what you will do this week.</h2>
     
-    <ul id="focus_areas">
+    <ul id="focus_areas" class="row">
+      <li class="col-1-2">
+        <h3>Custom Tasks:</h3>
+        <ul>
+          <li class="selected">Step A</li>
+          <li class="selected">Step B</li>
+          <li>Step C</li>
+          <li class="selected">Step D</li>
+          <li>Step E</li>
+        </ul>
+      </li>
+        <li class="col-1-2">
+          <h3>Manager's Tasks:</h3>
+          <ul>
+            <li class="selected">Step A</li>
+            <li class="selected">Step B</li>
+            <li>Step C</li>
+            <li class="selected">Step D</li>
+            <li>Step E</li>
+          </ul>
+        </li>
       <li class="col-1-2">
         <h3>Leadership:</h3>
         <ul>
