@@ -40,5 +40,10 @@ $(document).ready( function() {
     }
   })
   
+  $('button.reply').click( function() {
+    $(this).parent().siblings('form').slideToggle()
+    console.log('asdf')
+  })
+  
 
 });
