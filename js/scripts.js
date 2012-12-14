@@ -32,5 +32,13 @@ $(document).ready( function() {
   $('#focus_areas li li').click( function() {
     $(this).toggleClass('selected')
   })
+  
+  $('#queue li').click( function(e) {
+    if (this == e.target) {
+      $(this).children('.sub_content').slideToggle()
+      $(this).toggleClass('clickable expanded')
+    }
+  })
+  
 
 });
