@@ -78,41 +78,46 @@
 
   <div id="main_content">
     <nav id="goal_steps" class="tab_set">
-      <button class="current">Home</button><button>Start</button><button>Plan</button><button>Announce</button><button>Reflect</button><button>Kudos</button>
+      <a href="goal_home.html"><button class="current">Home</button></a><a href="goal_start.html"><button>Start</button></a><a href="goal_plan.html"><button>Plan</button></a><a href="goal_announce.html"><button>Announce</button></a><a href="goal_reflect.html"><button>Reflect</button></a><a href="goal_kudos.html"><button>Kudos</button></a>
     </nav>
     
     <section id="stats">
       <h2>Steps Completed</h2>
       <div id="progress_graph" class="graph" width='400' height='200' ></div>
-    </section>    
-    <div id="notifications">
-      <h2>Notifications</h2>
-      <ul>
-        <li class="alert">
-          <div class="list_buttons">
-            <button class="dismiss"></button>
-            <button class="view"></button>
-          </div>
-          Reminder: complete your Week 12 report
-        </li>
-        <li class="alert">
-          <div class="list_buttons">
-            <button class="dismiss"></button>
-            <button class="view"></button>
-          </div>ReminderL PLant your steps for Week 13</li>
-        <li class="dismissed">
-          <div class="list_buttons">
-            <button class="dismiss"></button>
-            <button class="view"></button>
-          </div>Dan wated to share this article with you [link]</li>
-        <li class="dismissed">
-          <div class="list_buttons">
-            <button class="dismiss"></button>
-            <button class="view"></button>
-          </div>Pam gave you a Kudos point and wanted to share this feedback:<blockquote>"Your team did great at the board presentation. Keep up the good work!"</blockquote>
-        </li>
-      </ul>
+    </section>
+      
+    <div id="mission" class="row">
+      <section class="col-1-2 color blue">
+        <h2>Progress</h2>
+        <div id="graph"></div>
+      </section>
+      
+      <section id="notifications" class="col-1-2 color blue">
+        <h2>My Notifications</h2>
+        <ul>
+          <li class="alert">
+            <button class="txt">dismiss</button>
+            Reminder: complete your Week 12 report
+          </li>
+          <li class="alert">
+            <button class="txt">dismiss</button>
+            Reminder: Plant your steps for Week 13</li>
+          <li class="dismissed">
+            <button class="txt">dismiss</button>
+            Dan wated to share this article with you [link]</li>
+          <li class="dismissed">
+            <button class="txt">dismiss</button>
+            Pam gave you a Kudos point and wanted to share this feedback:
+            <blockquote>"Your team did great at the board presentation. Keep up the good work!"</blockquote>
+          </li>
+        </ul>
+      </section>
     </div>
+    
+    <section id="coaching" class="col-1 color blue">
+      <h2>Coaching Tips</h2>
+      <div class="graph"></div>
+    </section>
     
   </div>
 </body>

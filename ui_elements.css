@@ -130,7 +130,7 @@ nav.tab_set button:active {
 
 label, legend {
 /*  margin: 4px 0 12px -15px;*/
-  margin: 0 0 12px;
+  margin: 20px 0 10px;
   display: block;
   color: #474747;
   font-weight: 600;

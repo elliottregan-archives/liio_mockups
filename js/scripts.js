@@ -45,5 +45,10 @@ $(document).ready( function() {
     console.log('asdf')
   })
   
+  $('button.create').click( function() {
+    $(this).parent().siblings('form').slideToggle()
+    console.log('asdf')
+  })
+  
 
 });
