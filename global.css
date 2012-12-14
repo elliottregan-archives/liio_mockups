@@ -269,7 +269,7 @@ header li {
 #main_content {
   position: absolute;
   margin-left: 240px;
-  padding: 100px 40px 60px;
+  padding: 30px 40px 60px;
   height: 100%;
   z-index: 10;
   position: relative;
@@ -1189,3 +1189,31 @@ h3 button {
 }
 
 /* @end */
+
+.tab_set {
+  padding-top: 20px;
+}
+
+.tab_set li {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #dadada;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: .9em;
+  background-image: none;
+  background-color: white;
+}
+
+.tab_set li.current {
+  border: 1px solid #dadada;
+  border-bottom: none;
+  border-top: 3px solid #4093d9;
+}
+
+.sub_tab {
+  padding: 10px;
+}
