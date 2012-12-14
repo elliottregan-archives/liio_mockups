@@ -69,11 +69,40 @@
 
   <div id="main_content">
     <nav id="goal_steps" class="tab_set">
-      <button>Home</button><button>Start</button><button>Plan</button><button class="current">Announce</button><button>Reflect</button><button>Kudos</button>
+      <button>Home</button><button>Start</button><button>Plan</button><button>Announce</button><button>Reflect</button><button>Kudos</button>
     </nav>
     
     <section id="new">
-      <h2>SPARK a New Goal</h2>
+      <h1>SPARK a New Goal</h1>
+      
+      <form method="post" action="">
+        <fieldset>
+          <label for="presets">Choose one of these goals:</label>
+          <select>
+            <optgroup label="Goals from your manager">
+              <option>Goal 1</option>
+              <option>Goal 2</option>
+            </optgroup>
+            <optgroup label="Your personal goals">
+              <option>Goal 1</option>
+              <option>Goal 2</option>
+            </optgroup>
+              <optgroup label="Liio presets">
+                <option>Goal 3</option>
+                <option>Goal 4</option>
+              </optgroup>
+          </select>
+        </fieldset>
+        <button class="smooth">SPARK it!</button>
+      </form>
+      
+      <h2>OR</h2>
+      
+      <div>
+        <h3>Create your own with the SPARK Wizard</h3>
+        <button class="smooth">Create a Goal</button>
+      </div>
+      
       <form action="">
             
       <fieldset class="two_column">
@@ -107,7 +136,7 @@
       </fieldset>
     </form>
     
-    <button type="submit" class="glassy">Save</button>
+    <button type="submit" class="glassy">SPARK it!</button>
     
   </section>    
   </div>
