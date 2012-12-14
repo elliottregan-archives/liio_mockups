@@ -194,6 +194,13 @@ form > legend {
   margin: 20px 0;
 }
 
+h3 {
+  font: 600 1.6em 'Open Sans Condensed';
+  width: 100%;
+  padding: 0px 0 10px;
+  margin: 0;
+}
+
 legend ~ fieldset {
   padding: 10px 20px;
 }

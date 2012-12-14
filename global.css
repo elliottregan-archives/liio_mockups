@@ -39,7 +39,7 @@ h1 ~ p {
 h2 {
   font-weight: 300;
   font-style: normal;
-  margin-top: 0;
+  margin: 20px 0 0;
   font-size: 1.6em;
   color: #7e7e7e;
 }
@@ -315,6 +315,7 @@ figure {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 #help li {
@@ -781,6 +782,10 @@ ul.reflections {
 
 #stats {
   display: none;
+}
+
+#progress_graph {
+  height: 200px;;
 }
 
 #insp_prog {

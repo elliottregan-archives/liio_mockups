@@ -17,18 +17,18 @@ $(document).ready( function() {
   $.plot($('#progress_graph'), data, options); 
   
   
-  //  var pieData = [];
-  //  var series = Math.floor(Math.random()*6)+3;
-  //  for( var i = 0; i<series; i++){false
-  //  	data[i] = { label: "Series"+(i+1), data: Math.floor(Math.random()*100)+1 }
-  //  }
-  //
-  //  $.plot($('#pie_chart'), pieData, 
-  //  {
-  //    series: {
-  //      pie: {
-  //        show: true
-  //      }
-  //    }
-  //  });
+    var pieData = [];
+    var series = 7;
+    for( var i = 0; i<series; i++){false
+    	pieData[i] = { label: "Goal "+(i+1), data: Math.floor(Math.random()*100)+1 }
+    }
+  
+    $.plot($('#pie_chart'), pieData, 
+    {
+      series: {
+        pie: {
+          show: true
+        }
+      }
+    });
 })
