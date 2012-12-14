@@ -18,9 +18,22 @@ body {
   margin: auto;
 }
 
+.boxed_container {
+  
+  padding: 10px;
+}
+
 h1 {
-  font-size: 2em;
-  margin: 0 0 10px;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-family: 'Open Sans Condensed';
+}
+
+h1 ~ p {
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -267,7 +280,6 @@ header li {
 }
 
 dt {
-  font-size: 1.2em;
   font-weight: 600;
   margin-top: 10px;
 }
@@ -377,11 +389,6 @@ nav#goal_steps {
   width: 100%;
   top: 0;
   right: 0;
-}
-
-#start_questions legend {
-  padding: 10px 0;
-  display: block;
 }
 
 #start_questions h2 {
@@ -726,7 +733,7 @@ li.message .text {
   color: #717171;
 }
 
-li.message .date {
+.date {
   padding: 10px;
   width: 40px; height: 100%;
   float: left;
@@ -734,13 +741,13 @@ li.message .date {
   color: #545454;
 }
 
-li.message .day {
+.day {
   font-size: 2em;
   line-height: 30px;
   color: #339dfe;
 }
 
-li.message .mon {
+.mon {
   font-size: .9em;
   font-weight: bold;
 }
@@ -766,10 +773,8 @@ li.message:last-of-type {
   box-shadow: none;
 }
 
-#start_questions h3 {
-  margin-top: 60px;
-  padding: 20px;
-  border-top: 1px solid #adadad;
+ul.reflections {
+  margin-left: 100px;
 }
 
 /* @group Inspiration Grid */

@@ -39,7 +39,7 @@
   <section id="goals">
     <h2>Active Goals</h2>
     <nav class="goal_list">
-      <a href="#" class="current"><img src="images/ski.svg" alt="Skiing" class="ski"/>Ski</a>
+      <a href="goal_home.html" class="current"><img src="images/ski.svg" alt="Skiing" class="ski"/>Ski</a>
       <a href="#"><img src="images/horse.svg" alt="Lancing" class="horse"/>Horse</a>
       <a href="#"><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" />Sunscreen</a>
       <a href="#"><img src="images/add_this.png" alt="new" />SPARK a new goal</a>
@@ -86,74 +86,80 @@
       <section id="start_questions">
         <h1>Reflect:</h1>
         <p>Reflect questions allow you to...Aenean erat libero, laoreet vitae mollis nec, egestas id tellus. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</p>
-        <h2>Report for week of 10/24</h2>
-        
-        <button class="smooth">Submit Form</button>
-        
-        <form action="">
-          <fieldset>
-            <label for="free_resp">Free Response about this week:</label>
-            <textarea></textarea>
-          </fieldset>
-          <button class="smooth">Save</button>
-        </form>
-        
-        <h3>Step A <button class="txt">Share this step</button></h3>
-        <form method="post" action="">
-          <fieldset>
-            <legend for="completed_01">Did you complete the task?</legend>
-            <input type="radio" id="true_01" name="completed_01"/>
-            <label for="true_01">True</label>
-            <input type="radio" id="false_01" name="completed_01"/>
-            <label for="false_01">False</label>
-          </fieldset>
-          <fieldset>
-            <label for="reflect">Reflection Question: Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</label>
-            <textarea></textarea>
-            <h4>'Plan' notes:</h4>
-            <ul>
-              <li>Nam id risus at magna tincidunt venenatis et porttitor tellus. </li>
-              <li>Nid risus at magna tincidunt nam id risus at magna tincidunt venenatis et porttitor tellus.  venenatis et porttitor tellus. </li>
-            </ul>
-          </fieldset>
-          <button class="smooth">save</button>
-        </form>
-        
-        <h3>Step B <button class="txt">Share this step</button></h3>
-        <form method="post" action="">
-          <legend>Report for week of 10/24</legend>
-          <fieldset>
-            <legend>Step A</legend>
-            <legend for="completed_02">Did you complete the task?</legend>
-            <input type="radio" id="true_02" name="completed_02"/>
-            <label for="true_02">True</label>
-            <input type="radio" id="false_02" name="completed_02"/>
-            <label for="false_02">False</label>
-          </fieldset>
-          <fieldset>
-            <label for="reflect">Reflection Question: Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</label>
-            <textarea></textarea>
-            <h4>'Plan' notes:</h4>
-            <ul>
-              <li>Nid risus at magna tincidunt nam id risus at magna tincidunt venenatis et porttitor tellus.  venenatis et porttitor tellus. </li>
-            </ul>
-          </fieldset>
-          <button class="smooth">save</button>
-        </form>
-        
+        <section class="col-1 color blue">
+          <h2>Report for week of 10/24 <button class="smooth right">Submit Form</button></h2>
+
+          <div class="boxed_container">
+            <div class="form_container">
+              <form action="">
+                <fieldset>
+                  <label for="free_resp">Free Response about this week:</label>
+                  <textarea></textarea>
+                </fieldset>
+                <button class="smooth">Save</button>
+              </form>
+            </div>
+            
+            
+            <form method="post" action="">
+              <legend>Step A <button class="txt">Share this step</button></legend>
+              <fieldset>
+                <legend for="completed_01">Did you complete the task?</legend>
+                <input type="radio" id="true_01" name="completed_01"/>
+                <label for="true_01">True</label>
+                <input type="radio" id="false_01" name="completed_01"/>
+                <label for="false_01">False</label>
+              </fieldset>
+              <fieldset>
+                <legend>Reflection Question</legend>
+                <label for="reflect">Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus?</label>
+                <textarea></textarea>
+                <button class="smooth">save</button>
+                
+                <h4>'Plan' notes:</h4>
+                <ul>
+                  <li>Nam id risus at magna tincidunt venenatis et porttitor tellus. </li>
+                  <li>Nid risus at magna tincidunt nam id risus at magna tincidunt venenatis et porttitor tellus.  venenatis et porttitor tellus. </li>
+                </ul>
+              </fieldset>
+            </form>
+            
+            <form method="post" action="">
+              <legend>Step B <button class="txt">Share this step</button></legend>
+              <fieldset>
+                <legend for="completed_02">Did you complete the task?</legend><input type="radio" id="true_02" name="completed_02"/>
+                <label for="true_02">True</label>
+                <input type="radio" id="false_02" name="completed_02"/>
+                <label for="false_02">False</label>
+              </fieldset>
+              <fieldset>
+                <label for="reflect">Reflection Question: Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</label>
+                <textarea></textarea>
+                <h4>'Plan' notes:</h4>
+                <ul>
+                  <li>Nid risus at magna tincidunt nam id risus at magna tincidunt venenatis et porttitor tellus.  venenatis et porttitor tellus. </li>
+                </ul>
+                <button class="smooth">save</button>
+              </fieldset>
+            </form>
+          </div>
+        </section>        
         <button class="smooth">Submit Form</button>
         
         <h2>Weekly Reflections</h2>
           <ul>
             <li>
-              <h3>9/24 - 10/1:</h3>
-              <ul>
+              <div class="date">
+                <div class="day">7</div>
+                <div class="mon">nov</div>
+              </div>
+              <ul class="reflections">
                 <li>
-                  <h4>Step 1</h4>
+                  <h3>Step 1</h3>
                   <dl>
                     <dt>Completed?</dt>
                     <dd>Yes</dd>
-                    <dt>Reflection Question: Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</dt>
+                    <dt>Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus?</dt>
                     <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin lorem eu tortor ornare gravida. Sed vitae tempus turpis. Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</dd>
                     <dt>'Plan' notes:</dt>
                     <dd>
@@ -166,11 +172,11 @@
                   </dl>
                 </li>
                 <li>
-                  <h4>Step 4</h4>
+                  <h3>Step 4</h3>
                   <dl>
                     <dt>Completed?</dt>
                     <dd>Yes</dd>
-                    <dt>Reflection Question: Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</dt>
+                    <dt>Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</dt>
                     <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin lorem eu tortor ornare gravida. Sed vitae tempus turpis. Vivamus nisl diam, consectetur quis vehicula ut, venenatis sed odio. Donec non elementum turpis. Aenean erat libero, laoreet vitae mollis nec, egestas id tellus.</dd>
                     <dt>'Plan' notes:</dt>
                     <dd>
@@ -186,10 +192,13 @@
             </li>
           
             <li>
-              <h3>9/17 - 9/23:</h3>
-              <ul>
+              <div class="date">
+                <div class="day">7</div>
+                <div class="mon">nov</div>
+              </div>
+              <ul class="reflections">
                 <li>
-                  <h4>Step 1</h4>
+                  <h3>Step 1</h3>
                   <dl>
                     <dt>Completed?</dt>
                     <dd>Yes</dd>
