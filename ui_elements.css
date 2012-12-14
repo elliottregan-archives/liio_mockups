@@ -191,7 +191,7 @@ form > legend {
 /*  border-top: 1px solid #dddddd;*/
   width: 100%;
   padding: 10px 0;
-  margin: 10px 0 10px;
+  	rgin: 10px 0 10px;
 }
 
 h3 {
@@ -202,7 +202,7 @@ h3 {
 }
 
 legend ~ fieldset {
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 
 input[type=radio] {

@@ -50,5 +50,15 @@ $(document).ready( function() {
     console.log('asdf')
   })
   
+  $('.tab_set li').click( function() {
+    var tab_id = this.id;
+    var content_id = tab_id.substring(0, tab_id.length-4)
+    
+    $('.tab_set li').removeClass('current')
+    $(this).addClass('current')
+    $('.sub_tab').hide()
+    $('#' + content_id).show()
+  })
+  
 
 });
