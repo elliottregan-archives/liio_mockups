@@ -256,7 +256,7 @@ header li {
 #main_content {
   position: absolute;
   margin-left: 240px;
-  padding: 100px 40px 60px;
+  padding: 100px 40px 60px 0;
   height: 100%;
   z-index: 10;
   position: relative;
