@@ -51,7 +51,7 @@
     <h2>Active Goals</h2>
     <nav class="goal_list">
       <a href="#"><img src="images/ski.svg" alt="Skiing" class="ski"/>Ski</a>
-      <a href="goal_home.html" class="current"><img src="images/horse.svg" alt="Lancing" class="horse"/>Horse</a>
+      <a href="goal_home.html"><img src="images/horse.svg" alt="Lancing" class="horse"/>Horse</a>
       <a href="#"><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" />Sunscreen</a>
       <a href="#"><img src="images/add_this.png" alt="new" />SPARK a new goal</a>
     </nav>
@@ -81,11 +81,7 @@
   
   </div> 
   
-  <aside id="support_links">
-    <a href="#">Settings</a>
-    <a href="#">Help</a>
-    <a href="#">Log Out</a>
-  </aside>
+
 
 </div>  <!--End Sidebar-->
 
@@ -124,10 +120,26 @@
     </div>
     <div id="plan" class="sub_tab">
       <h2>Tasks to choose from:</h2>
-      
+      <form method="post" action="">
+        <legend>Create new steps to help you complete this goal.</legend>
+        <fieldset>
+        
+          <label for="cust_step_01">Custom Step:</label>
+          <input type="text" name="cust_step_01" value="" />
+        
+          <label for="preset_01">What Focus Area does this goal fall under?</label>
+          <select>
+            <option>Focus Area 1</option>
+            <option>Focus Area 2</option>
+          </select>
+          
+        </fieldset>
+        <button class="smooth">+ New Step</button>
+        <button class="smooth">Save</button>
+      </form>
       <ul id="focus_areas" class="row">
         <li class="col-1-2">
-          <h3>Custom Tasks:</h3>
+          <h3>Custom Step:</h3>
           <ul class="boxed_list" class="boxed_list">
             <li class="clickable">Step A</li>
             <li class="clickable">Step B</li>
@@ -137,7 +149,7 @@
           </ul>
         </li>
           <li class="col-1-2">
-            <h3>Manager's Tasks:</h3>
+            <h3>Manager's Steps:</h3>
             <ul class="boxed_list">
               <li class="clickable">Step A</li>
               <li class="clickable">Step B</li>
@@ -146,45 +158,6 @@
               <li class="clickable">Step E</li>
             </ul>
           </li>
-        <li class="col-1-2">
-          <h3>Leadership:</h3>
-          <ul class="boxed_list">
-            <li class="clickable">Step A</li>
-            <li class="clickable">Step B</li>
-            <li class="clickable">Step C</li>
-            <li class="clickable">Step D</li>
-            <li class="clickable">Step E</li>
-          </ul>
-        </li>
-        <li class="col-1-2">
-          <h3>Communication:</h3>
-          <ul class="boxed_list">
-            <li class="clickable">Step A</li>
-            <li class="clickable">Step B</li>
-            <li class="clickable">Step C</li>
-            <li class="clickable">Step D</li>
-            <li class="clickable">Step E</li>
-            <li class="clickable">Step F</li>
-            <li class="clickable">Step G</li>
-          </ul>
-        </li>
-        <li class="col-1-2">
-          <h3>Planning:</h3>
-          <ul class="boxed_list">
-            <li class="clickable">Step A</li>
-            <li class="clickable">Step B</li>
-            <li class="clickable">Step C</li>
-            <li class="clickable">Step D</li>
-            <li class="clickable">Step E</li>
-          </ul>
-        </li>
-        <li class="col-1-2">
-          <h3>Personal:</h3>
-          <ul class="boxed_list">
-            <li class="clickable">Step A</li>
-            <li class="clickable">Step B</li>
-          </ul>
-        </li>
       </ul>
     </div>
     <div id="reflect" class="sub_tab">

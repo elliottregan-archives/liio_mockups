@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>User Summary</title>
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+  <link rel="stylesheet" href="ui_elements.css" type="text/css" />
+  <link rel="stylesheet" href="dashboard.css" type="text/css" />
+  <link rel="stylesheet" href="global.css" type="text/css" />
+  <link rel="stylesheet" href="goal.css" type="text/css" />
+
+   <!-- Flot stuff -->
+    <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="js/flot/excanvas.min.js"></script><![endif]-->
+    <script language="javascript" type="text/javascript" src="js/flot/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.resize.js"></script>
+
+    <script language="javascript" type="text/javascript" src="js/scripts.js"></script>
+    <script language="javascript" type="text/javascript" src="js/graph_scripts.js"></script>
+
+
+</head>
+
+<body>
+
+  <header>
+    
+    <ul>
+      <li>User Manual</li>
+      <li>Contact Liio</li>
+    </ul>
+    
+    <div class="header_logo"></div>
+    
+    <figure class="profile_pic">
+      <img src="images/portrait.jpg" alt="profile_pic" />
+      <figcaption>Elliott</figcaption>
+    </figure>
+
+  </header>
+<div id="sidebar">
+
+
+  <nav>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+  <div class="scroll_area">
+  <section id="goals">
+    <h2>Active Goals</h2>
+    <nav class="goal_list">
+      <a href="goal_home.html"><img src="images/ski.svg" alt="Skiing" class="ski"/>Ski</a>
+      <a href="#"><img src="images/horse.svg" alt="Lancing" class="horse"/>Horse</a>
+      <a href="#"><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" />Sunscreen</a>
+      <a href="#"><img src="images/add_this.png" alt="new" />SPARK a new goal</a>
+    </nav>
+  </section>
+    
+<!--  <section id="priorities">
+    <h2>This Week...</h2>
+    <form action="">
+      <ul>
+        <li>
+          <input type="checkbox" name="pri-01" id="pri-01" value="" />
+          <label for="pri-01">I will do cardio 4x this week</label>
+        </li>
+        <li>
+          <input type="checkbox" name="pri-02" id="pri-02" value="" />
+          <label for="pri-02">I will avoid conflict with my children</label>
+        </li>
+        <li>
+          <input type="checkbox" name="pri-03" id="pri-03" value="" />
+          <label for="pri-03">I will have no more than 2 desserts</label>
+        </li>
+
+      </ul>
+    </form>
+  </section>-->
+  
+  
+  </div> 
+
+</div>  <!--End Sidebar-->
+
+  <div id="main_content">
+      
+    <section id="connect_user" class="col-1 color blue">
+      <h2>Connect with Elliott:</h2>
+      <div class="boxed_container">
+        <form method="post" action="">
+          <label for="replay_01">Send Elliott a message:</label>
+          <textarea id="reply_01" name="reply_01"></textarea>
+          <button class="smooth" type="submit">Send</button>
+          <label for="kudos_pt">Reward Elliott with a Kudos Point</label>
+          <button class="smooth">+1</button>
+        </form>
+      </div>
+    
+    </section>
+    
+    <h2>Weekly activity Records:</h2>
+    <div class="column_nav">
+      <ul class="weeks">
+        <li class="week selected">
+          <span class="title">12/1</span>
+          <ul class="goal_list">
+            <li class="goal selected">
+              <span class="title">Goal Name 1</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 1A</li>
+                <li class="focusarea">Focus Area 1B</li>
+                <li class="focusarea">Focus Area 1C</li>
+              </ul>
+            </li>
+            <li class="goal">
+              <span class="title">Goal Name 2</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 2A</li>
+                <li class="focusarea">Focus Area 2B</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="week">
+          <span class="title">11/20</span>
+          <ul class="goal_list">
+            <li class="selected goal">
+              <span class="title">Goal Name 1</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 1A</li>
+                <li class="focusarea">Focus Area 1B</li>
+                <li class="focusarea">Focus Area 1C</li>
+              </ul>
+            </li>
+            <li class="goal">
+              <span class="title">Goal Name 2</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 2A</li>
+                <li class="focusarea">Focus Area 2B</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="week">
+          <span class="title">11/13</span>
+          <ul class="goal_list">
+            <li class="selected goal">
+              <span class="title">Goal Name 1</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 1A</li>
+                <li class="focusarea">Focus Area 1B</li>
+                <li class="focusarea">Focus Area 1C</li>
+              </ul>
+            </li>
+            <li class="goal">
+              <span class="title">Goal Name 2</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 2A</li>
+                <li class="focusarea">Focus Area 2B</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="week">
+          <span class="title">11/6</span>
+          <ul class="goal_list">
+            <li class="selected goal">
+              <span class="title">Goal Name 1</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 1A</li>
+                <li class="focusarea">Focus Area 1B</li>
+                <li class="focusarea">Focus Area 1C</li>
+              </ul>
+            </li>
+            <li class="goal">
+              <span class="title">Goal Name 2</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 2A</li>
+                <li class="focusarea">Focus Area 2B</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="week">
+          <span class="title">10/30</span>
+          <ul class="goal_list">
+            <li class="selected goal">
+              <span class="title">Goal Name 1</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 1A</li>
+                <li class="focusarea">Focus Area 1B</li>
+                <li class="focusarea">Focus Area 1C</li>
+              </ul>
+            </li>
+            <li class="goal">
+              <span class="title">Goal Name 2</span>
+              <ul class="focusarea_list">
+                <li class="focusarea">Focus Area 2A</li>
+                <li class="focusarea">Focus Area 2B</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      
+    <div class="row">
+      <section class="col-2-3 color blue">
+        <h2>Progress Graph</h2>
+        <div id="progress_graph" class="graph"></div>
+      </section>
+      <section class="col-1-3">
+        <p>* Group is defined as all other users you're helping</p>
+        <p>* Steps are mutually exclusive and value of each step will vary between users and circumstances.</p>
+      </section>
+    </div>    
+    
+  </div>
+</body>
+</html>

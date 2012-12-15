@@ -60,5 +60,13 @@ $(document).ready( function() {
     $('#' + content_id).show()
   })
   
+  $('.column_nav ul > li').click(function() {
+    $(this).addClass('selected')
+    $(this).siblings().removeClass('selected')
+    $(this).siblings().children('ul').hide()
+    $(this).siblings().children().children('ul').hide()
+    $(this).children('ul').show()
+  
+  })
 
 });
