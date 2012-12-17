@@ -2,7 +2,7 @@ button {
   cursor: pointer;
 }
 
-button.glassy {
+/*button.glassy {
   padding: 12px 26px;
   color: #474747;
   border: 1px solid #c4c4c4;
@@ -29,7 +29,7 @@ button.glassy:active {
   margin: 10px 0px;
   display: inline-block;
   position: relative;
-}
+}*/
 
 /*.btn_set button.glassy:not(:last-of-type)::after {
   content: '\a';
@@ -41,9 +41,9 @@ button.glassy:active {
   background-color: #505050;
 }*/
 
-.btn_set button.glassy:first-of-type {
+/*.btn_set button.glassy:first-of-type {
   margin-left: 0;
-}
+}*/
 
 button.btn_attention {
   border-left-color: #deb700;
@@ -129,16 +129,21 @@ nav.tab_set button:active {
 }
 
 label {
-  padding: 0 0 10px;
+  padding: 10px 0 5px;
   display: block;
   color: #474747;
   font-weight: 200;
   line-height: .9em;
 }
 
+label:first-of-type {
+  padding: 0 0 5px;
+}
+
 legend {
   padding: 0;
   font-weight: 600;
+  display: block;
 }
 
 input[type=radio] ~ legend {
@@ -177,13 +182,14 @@ textarea {
 
 fieldset {
   border: none;
-  padding: 10px 0;
+  padding: 0;
   margin: 0;
 }
 
 h4 {
   font-weight: 600;
-  padding: 0;
+  padding: 20px 0 10px;
+  margin: 0;
 }
 
 form > legend {
@@ -194,23 +200,38 @@ form > legend {
   	rgin: 10px 0 10px;
 }
 
+strong {
+  font-weight: 600;
+}
+
 h3 {
   font: 600 1.6em 'Open Sans Condensed';
   width: 100%;
-  padding: 0px 0 10px;
+  padding: 10px 0 5px;
   margin: 0;
 }
 
+h2 button.right {
+  margin: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ul.bulleted {
+  list-style: circle;
+}
+
 legend ~ fieldset {
-  padding: 10px 0;
+  padding: 10px 0 5px;
 }
 
 input[type=radio] {
   display: inline-block;
 }
 
-input[type=radio] + label {
+:not(.switch) > input[type=radio] ~ label {
   display: inline-block;
+  padding: 0;
 }
 
 fieldset.two_column label, fieldset.two_column legend {
@@ -230,4 +251,4 @@ fieldset.radio.two_column label {
 	float: none;
 	width: auto;
 	font-weight: normal;
-	}
+}
