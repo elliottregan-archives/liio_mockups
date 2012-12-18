@@ -86,7 +86,8 @@ header:hover .settings {
 
 header .settings {
   font-size: .5em;
-  vertical-align: top;
+  line-height: 2.4em;
+  vertical-align: bottom;
   margin-left: 10px;
   color: rgb(29, 30, 29);
   -webkit-transition: all 200ms ease;
@@ -94,9 +95,11 @@ header .settings {
   -ms-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
-  background-size: 20px;
   padding-left: 30px;
   background: url(images/gear.svg) no-repeat left center;
+  -moz-background-size: 20px;
+  -webkit-background-size: 20px;
+  background-size: 20px;
 }
 
 header .profile_pic {
@@ -130,14 +133,14 @@ header .profile_pic {
 .profile_pic figcaption {
   display: block;
   margin: 0 80px;
-  line-height: .9em;
-  font-size: 2.0em;
+  line-height: 1.4em;
+  font-size: 2.2em;
 }
 
 header ul {
   position: absolute;
-  right: 100px;
-  top: 25px;
+  right: 160px;
+  top: 40px;
 }
 
 header li {
@@ -146,9 +149,9 @@ header li {
 }
 
 .header_logo {
-  display: block;
-  width: 80px; height: 90px;
-  background: url(images/Liio_logo.png) no-repeat left top;
+  display: inline-block;
+  width: 120px; height: 140px;
+  background: url(images/Liio_foot_logo-light.png) no-repeat left top;
   background-size: 100%;
   position: absolute;
   top: 10px;
@@ -163,7 +166,15 @@ header li {
 }
 
 .about_goal {
-
+  margin-bottom: 40px;
+  padding: 20px 40px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#f0f0f0));
+  background-image: -moz-linear-gradient(90deg, white 0%, #f0f0f0 100%);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  text-shadow: 0 1px 1px #ffffff;
 }
 
 .about_goal figure * {
@@ -172,12 +183,14 @@ header li {
 }
 
 .about_goal img {
-  
+  width: 100px;
 }
 
-.abot_goal p {
+.about_goal p {
   margin: 0;
   padding: 0;
+  color: #8a8a8a;
+  font-size: .8em;
 }
 
 .about_goal figcaption {
@@ -323,7 +336,7 @@ header li {
 }
 
 body.goal #main_content {
-  padding-top: 20px;
+  padding-top: 200px;
 }
 
 #main_content.dashboard {
@@ -348,6 +361,12 @@ dd {
 #pie_chart {
   width: 400px;
   height: 200px;
+}
+
+.text_divider {
+  padding: 40px;
+  font-size: 3em;
+  text-align: center;
 }
 
 figure {
@@ -1312,6 +1331,14 @@ h3 button {
   font-size: .8em;
 }
 
+button.smooth.confirm {
+  border-color: #8ec06d;
+}
+
+button.smooth.confirm:hover {
+  border-color: #75c143;;
+}
+
 /* @end */
 
 /* @group Column Navigation UI */
@@ -1510,6 +1537,8 @@ li.focusarea {
 
 .container > nav {
   margin: auto;
+  width: 700px;
+  text-align: center;
 }
 
 /* @end */
