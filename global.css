@@ -1508,4 +1508,8 @@ li.focusarea {
   text-shadow: none;
 }
 
+.container > nav {
+  margin: auto;
+}
+
 /* @end */
