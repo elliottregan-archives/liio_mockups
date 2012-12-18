@@ -33,8 +33,8 @@ $(document).ready( function() {
     $(this).toggleClass('selected')
   })
   
-  $('#queue li').click( function(e) {
-    if (this == e.target) {
+  $('#queue li').not('.completed').click( function(e) {
+    if ((this == e.target) || (e.target.className == 'title')) {
       $(this).children('.sub_content').slideToggle()
       $(this).toggleClass('clickable expanded')
     }
@@ -68,5 +68,9 @@ $(document).ready( function() {
     $(this).children('ul').show()
   
   })
+  
+  var coachingWidth = $('ul.coaching_tips').children().length * 234 + 12
+  
+  $('ul.coaching_tips').css('width', coachingWidth)
 
 });
