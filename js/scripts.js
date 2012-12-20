@@ -42,12 +42,22 @@ $(document).ready( function() {
   
   $('button.reply').click( function() {
     $(this).parent().siblings('form').slideToggle()
-    console.log('asdf')
+  })
+  
+  $('button.cancel_msg').click( function() {
+    $(this).parent().slideToggle()
+  })
+  
+  $('#announce #help ul.users li').click( function() {
+    $(this).parent().siblings('form').slideDown()
   })
   
   $('button.create').click( function() {
     $(this).parent().siblings('form').slideToggle()
-    console.log('asdf')
+  })
+  
+  $('button.create_step').click( function() {
+    $(this).parent().siblings('ul').children('.new_step').slideToggle()
   })
   
   $('.tab_set li').click( function() {

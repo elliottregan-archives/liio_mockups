@@ -40,6 +40,7 @@ body {
   padding: 0;
   margin: auto;
   background-color: #ffffff;
+  position: relative;
 }
 
 .container {
@@ -258,7 +259,6 @@ header li {
   width: 240px; height: 100%;
   position: absolute;
   top: 0;
-  padding: 120px 0;
   text-shadow: none;
   background-color: #f7f7f7;
 }
@@ -432,11 +432,11 @@ ul {
   line-height: 50px;
   font-size: 2em;
   color: #949494;
-  border: 1px solid #6e6e6e;
+  border: 1px solid #dbdbdb;
   width: 50px;
   height: 50px;
   overflow: hidden;
-  background: url(images/about-icon.svg) no-repeat center center rgba(255, 255, 255, 0.45);
+  background: url(images/about-icon.svg) no-repeat center center rgb(255, 255, 255);
   background-size: 90%;
   cursor: pointer;
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.56);
@@ -445,7 +445,7 @@ ul {
 }
 
 .users li:hover {
-  background-color: rgba(255, 255, 255, 0.58);
+  opacity: .8;
 }
 
 .users figcaption {
@@ -667,12 +667,27 @@ h2 {
   margin-bottom: 20px;
 }
 
+#main_content #help form {
+  padding: 10px 0;
+  display: none;
+}
+
 #priorities label {
   margin: 8px 0;
   display: block;
   position: relative;
   font-weight: normal;
   font-style: normal;
+}
+
+#start label {
+  border-left: 3px solid #339dfe;
+  padding: 8px 10px;
+  margin: 20px 0 10px;
+}
+
+#start #main_content form {
+  padding-top: 20px;
 }
 
 ul.usr_list li a {
@@ -701,6 +716,10 @@ ul.boxed_list {
 
 #queue ul.boxed_list {
   height: auto;
+}
+
+ul.boxed_list li.new_step {
+  display: none;
 }
 
 ul.boxed_list li {
@@ -1327,11 +1346,19 @@ button.smooth:active {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.28), 0 1px 0 #ffffff;
 }
 
-
 h3 button {
   margin-left: 20px;
   padding: 0 8px;
   font-size: .8em;
+}
+
+button.smooth.small {
+  padding: 2px 14px;
+  vertical-align: bottom;
+  float: right;
+  font-size: .7em;
+  line-height: 1.2em;
+  vertical-align: bottom;
 }
 
 button.smooth.confirm {

@@ -83,20 +83,10 @@
         <legend>Create questions to help you start your goal.</legend>
         <p>Fusce porta augue felis, nec commodo dui. Maecenas semper ligula in risus viverra ac ultrices mauris convallis. Vestibulum ac pellentesque neque. Donec sit amet diam nisl.</p>
         <fieldset>
-          <label for="preset_01">Choose a Liio Question:</label>
-          <select>
-            <option>Question 1</option>
-            <option>Question 2</option>
-          </select>
           <label for="custom_01">Custom Question:</label>
           <textarea></textarea>
         </fieldset>
         <fieldset>
-          <label for="preset_01">Choose a Liio Question:</label>
-          <select>
-            <option>Question 1</option>
-            <option>Question 2</option>
-          </select>
           <label for="custom_01">Custom Question:</label>
           <textarea></textarea>
           <button class="smooth">+ New Question</button>
@@ -111,14 +101,22 @@
         
         <fieldset>
         
-          <label for="cust_step_01">Define a focus area:</label>
+          <label for="cust_step_01">Define a new focus area:</label>
           <input type="text" name="cust_step_01" />
+          <button type="reset" class="smooth confirm">Create</button>
           
         </fieldset>
         <ul id="focus_areas" class="row">
           <li class="col-1-2">
-            <h3>Add a new step:</h3>
+            <h3>New Focus Area:<button type="reset" class="smooth small create_step">+</button></h3>
             <ul class="boxed_list" class="boxed_list">
+              <li class="new_step">
+                <form method="post" action="">
+                  <input type="text" name="new_step" placeholder="enter new step" />
+                  <button type="reset" class="smooth confirm">create</button>
+                  <button type="reset" class="smooth cancel_msg">cancel</button>
+                </form>
+              </li>
               <li class="clickable">Step A</li>
               <li class="clickable">Step B</li>
               <li class="clickable">Step C</li>
@@ -137,7 +135,7 @@
             </ul>
           </li>
           <li class="col-1-2">
-            <h3>Focus Area 1:</h3>
+            <h3>Focus Area 1:<button class="smooth small">+</button></h3>
             <ul class="boxed_list">
               <li class="clickable">Step A</li>
               <li class="clickable">Step B</li>
@@ -147,7 +145,7 @@
             </ul>
           </li>
           <li class="col-1-2">
-            <h3>Focus Area 2:</h3>
+            <h3>Focus Area 2:<button class="smooth small">+</button></h3>
             <ul class="boxed_list">
               <li class="clickable">Step A</li>
               <li class="clickable">Step B</li>

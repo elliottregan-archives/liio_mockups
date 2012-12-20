@@ -22,7 +22,7 @@
    <script language="javascript" type="text/javascript" src="js/scripts.js"></script>
 
 </head>
-<body class="goal">
+<body class="goal" id="announce">
   <header>
     
     <ul>
@@ -103,8 +103,13 @@
           <li><img src="about-icon.svg" alt="name" class="profile_pic"/></li>
           <li><img src="about-icon.svg" alt="name" class="profile_pic" /></li>
           <li><img src="about-icon.svg" alt="name" class="profile_pic" /></li>
-          <li class="new">+</li>
         </ul>
+        <form method="post" action="">
+          <label for="replay_00">Send NAME a message:</label>
+          <textarea id="reply_00" name="reply_00"></textarea>
+          <button class="smooth">Send</button>
+          <button class="smooth cancel_msg" type="reset">Cancel</button>
+        </form>
       </section>
       <div id="social_buttons" class="inline">
         <h2>Update Your Friends</h2>
@@ -114,79 +119,80 @@
     
       
     
-    <section id="incoming" class="col-1 blue color">
-      <h2>Messages</h2>
-      <ul class="messages">
-        <li class="message">
-          <div class="date">
-            <div class="day">7</div>
-            <div class="mon">nov</div>
-          </div>
-          <div class="text">
-            <h3>Jason R. wrote:<button class="txt reply">reply</button><button class="txt">delete</button></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
-            <form method="post" action="">
-              <label for="replay_01">Reply to message:</label>
-              <textarea id="reply_01" name="reply_01"></textarea>
-              <button class="smooth">Send</button>
-            </form>
-          </div>
-        </li>
-        <li class="message">
-          <div class="date">
-            <div class="day">3</div>
-            <div class="mon">nov</div>
-          </div>
-          <div class="text">
-            <h3>Bill L. replied:<button class="txt reply">reply</button><button class="txt">delete</button></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
-            <form method="post" action="">
-              <label for="replay_01">Reply to message:</label>
-              <textarea id="reply_01" name="reply_01"></textarea>
-              <button class="smooth">Send</button>
-            </form>
-          </div>
-          <ul class="messages">
+<div class="row">
+<section id="incoming" class="col-1 blue color">
+    <h2>Messages</h2>
+    <ul class="messages">
+      <li class="message">
+        <div class="date">
+          <div class="day">7</div>
+          <div class="mon">nov</div>
+        </div>
+        <div class="text">
+          <h3>Jason R. wrote:<button class="txt reply">reply</button><button class="txt">delete</button></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
+          <form method="post" action="">
+            <label for="replay_01">Reply to message:</label>
+            <textarea id="reply_01" name="reply_01"></textarea>
+            <button class="smooth">Send</button>
+          </form>
+        </div>
+      </li>
+      <li class="message">
+        <div class="date">
+          <div class="day">3</div>
+          <div class="mon">nov</div>
+        </div>
+        <div class="text">
+          <h3>Bill L. replied:<button class="txt reply">reply</button><button class="txt">delete</button></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
+          <form method="post" action="">
+            <label for="replay_02">Reply to message:</label>
+            <textarea id="reply_02" name="reply_02"></textarea>
+            <button class="smooth">Send</button>
+          </form>
+        </div>
+        <ul class="messages">
+          <li class="message">
+            <div class="date">
+              <div class="day">3</div>
+              <div class="mon">nov</div>
+            </div>
+            <div class="text">
+              <h3>You wrote to Bill L.:</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
+            </div>
+          </li>
             <li class="message">
               <div class="date">
                 <div class="day">3</div>
                 <div class="mon">nov</div>
               </div>
               <div class="text">
-                <h3>You wrote to Bill L.:</h3>
+                <h3>Bill L. wrote:</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
               </div>
             </li>
-              <li class="message">
-                <div class="date">
-                  <div class="day">3</div>
-                  <div class="mon">nov</div>
-                </div>
-                <div class="text">
-                  <h3>Bill L. wrote:</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
-                </div>
-              </li>
-          </ul>
-        </li>
-        <li class="message">
-          <div class="date">
-            <div class="day">27</div>
-            <div class="mon">oct</div>
-          </div>
-          <div class="text">
-            <h3>Judy B. wrote:<button class="txt reply">reply</button><button class="txt">delete</button></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
-            <form method="post" action="">
-              <label for="replay_01">Reply to message:</label>
-              <textarea id="reply_01" name="reply_01"></textarea>
-              <button class="smooth">Send</button>
-            </form>
-          </div>
-        </li>
-      </ul>
-    </section>
-    
+        </ul>
+      </li>
+      <li class="message">
+        <div class="date">
+          <div class="day">27</div>
+          <div class="mon">oct</div>
+        </div>
+        <div class="text">
+          <h3>Judy B. wrote:<button class="txt reply">reply</button><button class="txt">delete</button></h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere aliquet sem vestibulum dapibus. Nunc sagittis diam adipiscing odio malesuada tempor. Vestibulum eget ipsum nec lacus malesuada mollis.</p>
+          <form method="post" action="">
+            <label for="replay_03">Reply to message:</label>
+            <textarea id="reply_03" name="reply_03"></textarea>
+            <button class="smooth">Send</button>
+          </form>
+        </div>
+      </li>
+    </ul>
+  </section>
+  </div>    
   </div>
 </body>
 </html>
