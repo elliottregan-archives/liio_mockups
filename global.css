@@ -194,44 +194,56 @@ header li {
   padding: 4px 4px 4px 20px;
 }
 
+/* @group Group/User header */
+
 .about_goal, .about_user {
   margin-bottom: 40px;
   padding: 20px 40px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#f0f0f0));
   background-image: -moz-linear-gradient(90deg, white 0%, #f0f0f0 100%);
-  position: absolute;
   width: 100%;
   left: 0;
   top: 0;
+  position: absolute;
   text-shadow: 0 1px 1px #ffffff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.about_goal figure *, .about_user figure * {
-  display: inline;
-  vertical-align: middle;
-  width: auto;
+.about_goal figure > *, .about_user figure > * {
+  display: inline-box;
+  vertical-align: top;
 }
 
 .about_goal img, .about_user img {
-  width: 100px;
-  display: inline;
+  width: 80px;
+  margin: 0 20px 10px 0;
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.about_goal h1, .about_user h1 {
+  margin: 0;
+  padding: 0;
 }
 
 .about_goal p, .about_user p {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 40px;
   color: #8a8a8a;
   font-size: .8em;
-  display: block;
+  width: 80%;
 }
 
 .about_goal figcaption, .about_user figcaption {
   margin: auto;
-  width: auto;
+  width: 80%;
 }
+
+/* @end */
 
 .goal_list img, .about_user img {
   width: 16px; height: 16px;
