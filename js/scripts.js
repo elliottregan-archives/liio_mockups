@@ -60,6 +60,15 @@ $(document).ready( function() {
     $(this).parent().siblings('ul').children('.new_step').slideToggle()
   })
   
+  $('button.expand').click( function() {
+    $(this).parent().siblings('fieldset').slideToggle()
+    
+    var text = $(this).text()
+    $(this).text(
+      text == "expand" ? "collapse" : "expand"
+    )
+  })
+  
   $('.tab_set li').click( function() {
     var tab_id = this.id;
     var content_id = tab_id.substring(0, tab_id.length-4)

@@ -241,6 +241,12 @@ input[type=radio] {
   padding: 0;
 }
 
+.radio_block > input[type=radio] ~ label::after {
+  content: '\a';
+  display: block;
+  clear: both;
+}
+
 fieldset.two_column label, fieldset.two_column legend {
 	float: left;
 	width: 340px;

@@ -1473,8 +1473,24 @@ li.focusarea {
   display: none;
 }
 
-#start.sub_tab {
+#start.sub_tab, #report.sub_tab {
   display: block;
+}
+
+#report fieldset {
+  display: none;
+}
+
+.context_question {
+  float: right;
+  width: 50%;
+  margin: 0 40px;
+}
+
+.clear {
+  content: '\a';
+  display: block;
+  clear: both;
 }
 
 /* @end */
