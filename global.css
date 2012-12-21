@@ -292,10 +292,14 @@ header li {
 
   padding-right: 11px;
   padding-left: 45px;
-  border-left: 4px solid #5394cc;
   margin-left: 0;
 
-  color: #2d2d2d;;
+  color: #2d2d2d;
+}
+
+nav ul.colored a {
+  
+  border-left: 4px solid #5394cc;
 }
 
 #sidebar nav a.current {

@@ -154,7 +154,7 @@ select {
   margin: 0 0 20px;
 }
 
-input[type=text], textarea {
+input[type=text], textarea, input[type=number] {
   display: block;
   border: 1px solid #d0d0d0;
   -webkit-border-radius: 3px;

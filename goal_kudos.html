@@ -50,15 +50,23 @@
   </nav>
     <h2>Active Goals</h2>
     <nav class="goal_list">
-      <a class="current one" href="goal_home.html"><img src="images/ski.svg" alt="Skiing" class="ski"/>Work Productively</a>
-      <a class="two" href="goal_home.html"><img src="images/horse.svg" alt="Lancing" class="horse"/>Communicating</a>
-      <a class="three"href="goal_home.html"><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" />Managing Others</a>
+      <ul class="colored">
+        <li>
+          <a class="current one" href="goal_home.html"><img src="images/ski.svg" alt="Skiing" class="ski"/>Work Productively</a>
+        </li>
+        <li>
+          <a class="two" href="goal_home.html"><img src="images/horse.svg" alt="Lancing" class="horse"/>Communicating</a>
+        </li>
+        <li>
+          <a class="three"href="goal_home.html"><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" />Managing Others</a>
+        </li>
+      </ul>
       <a href="goal_home.html"><img src="images/add_this.png" alt="new" />SPARK a new goal</a>
     </nav>
     
   <section id="priorities">
     <h2>This Week...</h2>
-    <ul>
+    <ul class="colored">
       <li class="one">I will do cardio 4x this week</li>
       <li class="one">I will avoid conflict with my children</li>
       <li class="one">I will have no more than 2 desserts</li>
@@ -102,18 +110,79 @@
     </dl>
     
     <div class="row">
-      <div class="col-1-3">
-        <figure>
-          <span class="big_text">52</span>kudos
-          <figcaption>earned so far</figcaption>
-        </figure>
+      <div class="col-1-2">
+        <div class="row">
+          <div class="col-1-2">
+            <figure>
+              <span class="big_text">52</span>kudos
+              <figcaption>earned so far</figcaption>
+            </figure>
+          </div>
+          <div class="col-1-2">
+            <figure>
+              <span class="big_text">52</span>kudos
+              <figcaption>redeemed so far</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <h2>Instructions</h2>
+            <p>Complete the following sentence to add a reward to your kudos list.</p>
+            <p>When I earn _____ number of Kudos Points, I will celebrate by doing _____.</p>
+            <form method="post" action="">
+              <input type="number" name="points_01" value="" />
+              <input type="text" name="reward_01" value="" />
+              <button class="smooth confirm">Save</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="col-2-3">
-        <div id="pie_chart" class="col-1-2"></div>
+      <div class="col-1-2">
+        <table>
+        	<tr>
+        		<th>Kudos</th>
+        		<th>Reward</th>
+        		<th>Completed</th>
+        	</tr>
+        	<tr>
+        		<td>5</td>
+        		<td>Company Pencil</td>
+        		<td>★</td>
+        	</tr>
+        	<tr>
+        		<td>10</td>
+        		<td>Company Pen</td>
+        		<td>★</td>
+        	</tr>
+        	<tr>
+        		<td>25</td>
+        		<td>"Casual Friday any day"</td>
+        		<td>★★</td>
+        	</tr>
+        	<tr>
+        		<td>50</td>
+        		<td>Work from home</td>
+        		<td>★</td>
+        	</tr>
+        	<tr>
+        		<td>75</td>
+        		<td>Extra sick day</td>
+        		<td>★★★★★</td>
+        	</tr>
+        	<tr>
+        		<td>100</td>
+        		<td>Day at the boss's estate</td>
+        		<td>★★★</td>
+        	</tr>
+        </table>			
+        				
       </div>  
     </div>
+    <h2>Where have my Kudos come from?</h2>
     <div class="row">
-      <div id="progress_graph" class="col-1"></div>
+      <div id="progress_graph" class="col-1-2"></div>
+      <div id="pie_chart" class="col-1-2"></div>
     </div>
     
     <button>Redeem Kudos Points</button>
