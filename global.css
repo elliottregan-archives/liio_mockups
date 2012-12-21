@@ -33,6 +33,7 @@ html {
   color: #303030;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   width: 100%;
+  min-width: 1150px;
 }
 
 body {
@@ -78,7 +79,7 @@ h2, h3, h4, h5, h6 {
   
 }
 
-form > :first-child, fieldset > :first-child, section > :first-child {
+form > fieldset:first-child, fieldset > :first-child, section > :first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
@@ -919,10 +920,6 @@ ul.coaching_tips {
   width: 120%;
 }
 
-#main_content :first-child.tip {
-  margin-top: 10px;
-}
-
 .tip {
   display: inline-block;
   height: 100%;
@@ -1249,7 +1246,11 @@ ul.inspiration figure .edit:after  {
   margin: 20px 0;
 }
 
-#main_content :first-child {
+.row .row {
+  margin: 0;
+}
+
+#main_content > :first-child {
   margin-top: 0;
 }
 
@@ -1592,3 +1593,51 @@ li.focusarea {
 }
 
 /* @end */
+
+/* @group Tables Styles */
+
+table {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #afafaf;
+	border-spacing: 0;
+	}
+table th,
+table td {
+	padding: 10px 20px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+	}
+table th {
+	border-width: 2px;
+	}
+table td {
+	color: #666;
+	}
+table tr:last-child th,
+table tr:last-child td {
+	border-bottom: none;
+	}
+table tr:nth-child(even) {
+	background: #eee;
+	}
+	
+.check {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-color: #00d73f;
+  display: block;
+  color: #ffffff;
+  line-height: 1.4em;
+  border: 1px solid #27b42e;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  color: white;
+  content: '✔';
+  text-align: center;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.42);
+}
+
+/* @end */				
