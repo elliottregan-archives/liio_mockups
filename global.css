@@ -220,7 +220,7 @@ header li {
 
 .about_goal img, .about_user img {
   width: 80px;
-  margin: 0 20px 10px 0;
+  margin: 0 20px 100px 0;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -234,7 +234,7 @@ header li {
 
 .about_goal p, .about_user p {
   margin: 0;
-  padding: 0 0 0 40px;
+  padding: 0;
   color: #8a8a8a;
   font-size: .8em;
   width: 80%;
@@ -476,15 +476,20 @@ ul {
   text-align: center;
 }
 
-#data figcaption {
-  font-weight: bold;
+.data figcaption {
   margin-bottom: 10px;
-  color: #11578e;
+  color: #585858;
+  font-size: 1em;
+  text-align: center;
+  white-space: pre;
 }
 
 .big_text {
   font-size: 6em;
-  padding-left: 20px;
+  line-height: 1em;
+  width: 100%;
+  display: block;
+  text-align: center;
 }
 
 #wk_reports {
@@ -519,6 +524,10 @@ section {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.blue {
+  
 }
 
 h2 {
@@ -864,7 +873,7 @@ li.message .text {
 }
 
 .date {
-  padding: 22px 10px;
+  padding: 22px 10px 22px 0;
   width: 40px; height: 100%;
   float: left;
   text-align: right;
@@ -1246,10 +1255,6 @@ ul.inspiration figure .edit:after  {
   margin: 20px 0;
 }
 
-.row .row {
-  margin: 0;
-}
-
 #main_content > :first-child {
   margin-top: 0;
 }
@@ -1451,6 +1456,7 @@ li.focusarea {
 
 .tab_set {
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .tab_set li {
@@ -1474,7 +1480,7 @@ li.focusarea {
 }
 
 .sub_tab {
-  padding: 10px;
+  padding: 10px 0;
   display: none;
 }
 
@@ -1484,12 +1490,6 @@ li.focusarea {
 
 #report fieldset {
   display: none;
-}
-
-.context_question {
-  float: right;
-  width: 50%;
-  margin: 0 40px;
 }
 
 .clear {
