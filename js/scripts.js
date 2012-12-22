@@ -48,8 +48,19 @@ $(document).ready( function() {
     $(this).parent().slideToggle()
   })
   
-  $('#announce #help ul.users li').click( function() {
-    $(this).parent().siblings('form').slideDown()
+  $('ul.users li:not(.new)').click( function() {
+    $(this).parent().siblings('form').slideUp()
+    $(this).parent().siblings('form:not(.invite)').slideDown()
+  })
+  
+  $('ul.users li.new').click( function() {
+    $(this).parent().siblings('form').slideUp()
+    $(this).parent().siblings('form.invite').slideDown()
+  })
+  
+  $('#reflect ul.users li').click( function() {
+    $(this).parent().parent().siblings('.msg').slideUp()
+    $(this).parent().parent().siblings('.msg').slideDown()
   })
   
   $('button.create').click( function() {

@@ -91,10 +91,6 @@
         <fieldset>
           <label for="custom_01">Custom Question:</label>
           <textarea></textarea>
-        </fieldset>
-        <fieldset>
-          <label for="custom_01">Custom Question:</label>
-          <textarea></textarea>
           <button class="smooth">+ New Question</button>
           <button class="smooth">Save</button>
         </fieldset>
@@ -106,15 +102,22 @@
         <p>Fusce porta augue felis, nec commodo dui. Maecenas semper ligula in risus viverra ac ultrices mauris convallis. Vestibulum ac pellentesque neque. Donec sit amet diam nisl.</p>
         
         <fieldset>
-        
-          <label for="cust_step_01">Define a new focus area:</label>
-          <input type="text" name="cust_step_01" />
+          <label for="step_01">Create a new Step:</label>
+          <input id="step_01" type="text" name="step_01" value="" />
+          <label for="new_focus_01">Define a new focus area for step:</label>
+          <input id="new_focus_01" type="text" name="new_focus_01" />
+          <label for="prev_focus_01">Choose an existing Focus Area:</label>
+          <select id="prev_focus_01">
+            <option>Focus Area 1</option>
+            <option>Focus Area 2</option>
+          </select>
+          <br>
           <button type="reset" class="smooth confirm">Create</button>
           
         </fieldset>
         <ul id="focus_areas" class="row">
           <li class="col-1-2">
-            <h3>New Focus Area:<button type="reset" class="smooth small create_step">+</button></h3>
+            <h3>New Focus Area:</h3>
             <ul class="boxed_list" class="boxed_list">
               <li class="new_step">
                 <form method="post" action="">
@@ -141,7 +144,7 @@
             </ul>
           </li>
           <li class="col-1-2">
-            <h3>Focus Area 1:<button class="smooth small">+</button></h3>
+            <h3>Focus Area 1:</h3>
             <ul class="boxed_list">
               <li class="clickable">Step A</li>
               <li class="clickable">Step B</li>
@@ -151,7 +154,7 @@
             </ul>
           </li>
           <li class="col-1-2">
-            <h3>Focus Area 2:<button class="smooth small">+</button></h3>
+            <h3>Focus Area 2:</h3>
             <ul class="boxed_list">
               <li class="clickable">Step A</li>
               <li class="clickable">Step B</li>
@@ -164,17 +167,6 @@
           
         </ul>
         
-        <fieldset>
-        
-          <label for="cust_step_01">Custom Step:</label>
-          <input type="text" name="cust_step_01" />
-        
-          <label for="preset_01">What Focus Area does this goal fall under?</label>
-          <input type="text" name="focus_01" />
-          
-        </fieldset>
-        <button class="smooth">+ New Step</button>
-        <button class="smooth">Save</button>
       </form>
       
     </div>
@@ -185,32 +177,30 @@
         <fieldset>
           <label for="custom_01">Custom Question:</label>
           <textarea></textarea>
-        </fieldset>
-        <fieldset>
-          <label for="custom_01">Custom Question:</label>
-          <textarea></textarea>
           <button class="smooth">+ New Question</button>
           <button class="smooth">Save</button>
         </fieldset>
       </form>
+      <h2>Saved Questions:</h2>
+      <ul class="bulleted">
+        <li>Proin tellus tortor, tempus id condimentum sit amet, tincidunt at lacus?</li>
+        <li>Proin tellus tortor, tempus id condimentum sit amet, tincidunt at lacus.?</li>
+      </ul>
     </div>
     <div id="coaching" class="sub_tab">
       <form method="post" action="">
         <legend>Write down some tip to motivation you while you work on your goal.</legend>
         <p>Fusce porta augue felis, nec commodo dui. Maecenas semper ligula in risus viverra ac ultrices mauris convallis. Vestibulum ac pellentesque neque. Donec sit amet diam nisl.</p>
+
         <fieldset>
-          <label for="custom_01">Coaching Tip:</label>
+          <label for="custom_01">Write a Coaching Tip:</label>
           <textarea></textarea>
-        </fieldset>
-        <fieldset>
-          <label for="custom_01">Coaching Tip:</label>
-          <textarea></textarea>
-          <button class="smooth">+ New Question</button>
+          <button class="smooth">+ New Custom Tip</button>
           <button class="smooth">Save</button>
         </fieldset>
         <div class="row">
           <section id="coaching" class="col-1">
-            <h2>Coaching Tips</h2>
+            <h2>Saved Coaching Tips</h2>
             <div class="coaching_wrapper">
               <ul class="coaching_tips">
                 <li class="tip">The technical aspects of a good handoff shouldn’t be that hard, but sometimes we make it harder than it needs to be. we make it harder than it needs to be. we make it harder.</li>

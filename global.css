@@ -262,6 +262,10 @@ header li {
   top: 0;
   text-shadow: none;
   background-color: #f7f7f7;
+  padding-top: 120px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #sidebar > * {
@@ -416,6 +420,7 @@ figure {
 
 .users li.new {
   width: 50px; height: 50px;
+  background: url() #ffffff;
 }
 
 #main_content .color.grey > ul.users {
@@ -456,6 +461,10 @@ ul {
 .users figcaption {
   line-height: 1em;
   color: #b6b6b6;
+}
+
+.msg {
+  display: none;
 }
 
 #stats .box {
@@ -527,7 +536,7 @@ section {
 }
 
 .blue {
-  
+  color: #5ba7e9;
 }
 
 h2 {
