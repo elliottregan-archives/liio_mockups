@@ -1,31 +1,59 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,600|Open+Sans+Condensed:300,400,700);
 
-.one {
+.colored .one {
   border-left: 4px solid #5293cb !important;
 }
 
-.two {
+.goal_list .one img {
+  border: 4px solid #5293cb !important;
+}
+
+.colored .two {
   border-left: 4px solid #dc5134 !important;
 }
 
-.three {
+.goal_list .two img {
+  border: 4px solid #dc5134 !important;
+}
+
+.colored .three {
   border-left: 4px solid #1eb41c !important;
 }
 
-.four {
+.goal_list .three img {
+  border: 4px solid #1eb41c !important;
+}
+
+.colored .four {
   border-left: 4px solid #f19717 !important;
 }
 
-.five {
+.goal_list .four img {
+  border: 4px solid #f19717 !important;
+}
+
+.colored .five {
   border-left: 4px solid #7b33dc !important;
 }
 
-.six {
+.goal_list .five img {
+  border: 4px solid #7b33dc !important;
+}
+
+.colored .six {
   border-left: 4px solid #3baec3 !important;
 }
 
-.seven {
+.goal_list .six img {
+  border: 4px solid #3baec3 !important;
+}
+
+.colored .seven {
   border-left: 4px solid #f4fe22 !important;
+}
+
+.goal_list .seven img {
+  border: 4px solid #f4fe22 !important;
 }
 
 
@@ -249,11 +277,16 @@ header li {
 
 .goal_list img, .about_user img {
   width: 16px; height: 16px;
-  padding: 4px 0;
+  padding: 4px;
   position: absolute;
   left: 5px;
   top: 7px;
-  opacity: .4;
+}
+
+.goal_list ul img {
+  border: 3px solid #333;
+  top: 5px;
+  left: 20px;
 }
 
 #sidebar {
@@ -286,9 +319,9 @@ header li {
   padding: 0;
 }
 
-#sidebar nav a {
+#sidebar nav li {
   display: block;
-  padding: 10px 12px;
+  padding: 10px;
   margin: 0;
   position: relative;
   color: #6e6e6e;
@@ -302,67 +335,16 @@ header li {
   color: #2d2d2d;
 }
 
-nav ul.colored a {
-  
-  border-left: 4px solid #5394cc;
+#sidebar nav.goal_list li {
+  padding-left: 60px;
 }
 
-#sidebar nav a.current {
+#sidebar nav li.current {
   font-weight: 400;
   background-color: #ffffff;
   -moz-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06), 0 1px 0 rgba(0, 0, 0, 0.06);
   -webkit-box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06), 0 1px 0 rgba(0, 0, 0, 0.06);
   box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06), 0 1px 0 rgba(0, 0, 0, 0.06);
-}
-
-.goal_list img {
-  left: 16px;
-}
-
-#support_links {
-  position: absolute;
-  display: block;
-  bottom: 20px;
-  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0.01) 100%), #ffffff;
-  -moz-box-shadow: inset 0 1px 0 #ffffff, 0 -4px 12px -6px #bbc7ce;
-  -webkit-box-shadow: inset 0 1px 0 #ffffff, 0 -4px 12px -6px #bbc7ce;
-  box-shadow: inset 0 1px 0 #ffffff, 0 -4px 12px -6px #bbc7ce;
-  padding: 0;
-  color: #6e6e6e;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-size: .9em;
-  text-align: center;
-  margin: auto;
-  width: 240px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.04)), to(rgba(0, 0, 0, 0.01))), #ffffff;
-  text-shadow: 0 1px 0 #ffffff;
-  border-top: 1px solid #c6c6c6;
-}
-
-#sidebar #support_links a {
-  display: inline-block;
-  padding: 6px 12px;
-  border-right: 1px solid #dfdfdf;
-  -moz-box-shadow: 1px 0 #ffffff;
-  -webkit-box-shadow: 1px 0 #ffffff;
-  box-shadow: 1px 0 #ffffff;
-}
-
-#sidebar #support_links a:last-of-type {
-  border-right: none;
-  -moz-box-shadow: 1px 0 rgba(255, 255, 255, 0);
-  -webkit-box-shadow: 1px 0 rgba(255, 255, 255, 0);
-  box-shadow: 1px 0 rgba(255, 255, 255, 0);
-}
-
-#sidebar #support_links a:hover {
-  border-top: 3px solid #4aadf7;
-  padding: 3px 12px;
-}
-
-#sidebar #support_links a:hover {
-  color: #282828;
 }
 
 #main_content {
@@ -452,10 +434,6 @@ ul {
   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.56);
   -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.56);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.56);
-}
-
-.users li:hover {
-  opacity: .8;
 }
 
 .users figcaption {
@@ -1299,7 +1277,6 @@ li[class*='col-']:nth-of-type(odd) {
 
 li.completed span{
   color: #b7b7b7;
-  text-decoration: line-through;
 }
 
 li .sub_content {
@@ -1326,9 +1303,8 @@ button.txt {
   background-color: transparent;
   color: #b7b7b7;
   padding: 0 4px;
-  line-height: inherit;
-  vertical-align: middle;
   display: inline-block;
+  margin: 0;
 }
 
 button.txt:hover {
