@@ -28,8 +28,15 @@
   <header>
     
     <ul>
-      <li>Support</li>
-      <li>FAQ</li>
+      <li>About Liio</li>
+      <li class="help">Support
+        <ul class="help_menu">
+          <li>Help Pages</li>
+          <li>User Manual</li>
+          <li>Contact Liio</li>
+        </ul>
+      </li>
+      <li>Log Out</li>
     </ul>
     
     <div class="header_logo"></div>
@@ -40,38 +47,49 @@
     </figure>
 
   </header>
+<div id="sidebar">
 
-  <div id="sidebar">
-  
-    <nav>
-      <a class="current" href="dashboard.html">Dashboard</a>
-      <a href="user_manage.html">Admin</a>
-    </nav>
-      <h2>Active Goals</h2>
-      <nav class="goal_list">
-        <a href="goal_home.html"><img src="images/ski.svg" alt="Skiing" class="ski"/>Work Productively</a>
-        <a href="goal_home.html"><img src="images/horse.svg" alt="Lancing" class="horse"/>Communicating</a>
-        <a href="goal_home.html"><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" />Managing Others</a>
-        <a href="goal_home.html"><img src="images/add_this.png" alt="new" />SPARK a new goal</a>
-      </nav>
+  <nav>
+    <ul>
+      <li>
+        <a href="dashboard.html">Dashboard</a>
+      </li>
+      <li>
+        <a href="user_manage.html">Admin</a>
+      </li>
+    </ul>
+  </nav>
+    <h2>Active Goals</h2>
+    <nav class="goal_list">
+      <ul>
+        <li class="current">
+          <a class="one" href="goal_home.html"><img src="images/ski.svg" alt="Skiing" class="ski"/>Work Productively</a>
+        </li>
+        <li>
+          <a class="two" href="goal_home.html"><img src="images/horse.svg" alt="Lancing" class="horse"/>Communicating</a>
+        </li>
+        <li>
+          <a class="three"href="goal_home.html"><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" />Managing Others</a>
+        </li>
+        <li><a href="goal_home.html"><img src="images/add_this.png" alt="new" />SPARK a new goal</a></li>
+      </ul>
       
-    <section id="priorities">
-      <h2>This Week...</h2>
-      <form action="">
-        <ul>
-          <li>I will do cardio 4x this week</li>
-          <li>I will avoid conflict with my children</li>
-          <li>I will have no more than 2 desserts</li>
-          <li>I will eat green leafy vegetables 3x this week</li>
-          <li>I will avoid conflict with my children</li>
-          <li>I will have no more than 2 desserts</li>
-          <li>I will eat green leafy vegetables 3x this week</li>
-        </ul>
-      </form>
-    </section>
-  
-  </div>  <!--End Sidebar-->
+    </nav>
     
+  <section id="priorities">
+    <h2>This Week...</h2>
+    <ul class="colored">
+      <li class="one">I will do cardio 4x this week</li>
+      <li class="one">I will avoid conflict with my children</li>
+      <li class="one">I will have no more than 2 desserts</li>
+      <li class="two">I will eat green leafy vegetables 3x this week</li>
+      <li class="two">I will avoid conflict with my children</li>
+      <li class="three">I will have no more than 2 desserts</li>
+      <li class="four">I will eat green leafy vegetables 3x this week</li>
+    </ul>
+  </section>
+
+</div>  <!--End Sidebar-->    
   <div id="main_content" class="dashboard">
 
       <div id="mission" class="row">

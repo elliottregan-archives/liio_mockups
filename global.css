@@ -134,9 +134,6 @@ header {
   background-color: #1e1e1e;
   position: relative;
   z-index: 100;
-  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.43);
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.43);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.43);
 }
 
 header:hover .settings {
@@ -207,6 +204,42 @@ header li {
   padding: 0 20px;
 }
 
+li.help:hover ul.help_menu {
+  height: 78px;
+}
+
+header ul.help_menu {
+  background-color: #1d1e1d;
+  position: absolute;
+  margin: auto;
+  top: 36px;
+  left: 115px;
+  right: auto;
+  width: 160px;
+  z-index: 100;
+  border-left: 4px solid #4193d9;
+  border-bottom: 4px solid #4193d9;
+  font-size: .9em;
+  
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  
+  height: 0;
+  overflow: hidden;
+}
+
+header ul.help_menu li {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+header ul.help_menu li:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+}
+
 .header_logo {
   display: inline-block;
   width: 120px; height: 140px;
@@ -227,18 +260,8 @@ header li {
 /* @group Group/User header */
 
 .about_goal, .about_user {
-  margin-bottom: 40px;
-  padding: 20px 40px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(white), to(#f0f0f0));
-  background-image: -moz-linear-gradient(90deg, white 0%, #f0f0f0 100%);
-  width: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
+  margin-bottom: 20px;
   text-shadow: 0 1px 1px #ffffff;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 .about_goal figure > *, .about_user figure > * {
@@ -265,7 +288,6 @@ header li {
   padding: 0;
   color: #8a8a8a;
   font-size: .8em;
-  width: 80%;
 }
 
 .about_goal figcaption, .about_user figcaption {
@@ -294,7 +316,7 @@ header li {
   position: absolute;
   top: 0;
   text-shadow: none;
-  background-color: #f7f7f7;
+  background-color: #f5f8f9;
   padding-top: 120px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -354,11 +376,11 @@ header li {
   height: 100%;
   z-index: 10;
   position: relative;
-  border-left: 1px solid #e9e9e9;
+  border-left: 1px solid #dedfde;
 }
 
 body.goal #main_content, body.user #main_content {
-  padding-top: 200px;
+  padding-top: 20px;
 }
 
 #main_content.dashboard {
@@ -513,7 +535,7 @@ section {
   box-sizing: border-box;
 }
 
-.blue {
+.blue_txt {
   color: #5ba7e9;
 }
 
@@ -1487,9 +1509,24 @@ li.focusarea {
 
 /* @group New Goal Buttons */
 
+.nav::before {
+  width: 100%;
+  height: 100px;
+  content: '\a';
+  left: 0;
+  top: 86px;
+  position: absolute;
+  z-index: -1;
+  border-bottom: 1px solid #dfdfdf;
+  background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.02) 0%, rgba(0, 0, 0, 0) 100%) #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.02)), to(rgba(0, 0, 0, 0))) #ffffff;
+}
+
 .nav {
   height: 48px;
+  margin: 10px 0;
   display: inline-block;
+  z-index: 10;
 }
 .nav > li, .nav:active > .active {
   float: left;
@@ -1498,13 +1535,9 @@ li.focusarea {
   height: 44px;
   color: #595959;
   text-shadow: 0 1px white;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgb(246, 246, 246);
   border: 1px solid;
   border-color: #cfcfcf #d6d6d6 #c8c8c8;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.25));
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.25));
-  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.25));
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.25));
   -webkit-box-shadow: inset 0 1px white, inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 2px #dadada, 0 3px #c4c4c4, 0 4px 3px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px white, inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 2px #dadada, 0 3px #c4c4c4, 0 4px 3px rgba(0, 0, 0, 0.1);
 }
@@ -1519,15 +1552,11 @@ li.focusarea {
   margin: 4px 0 0;
   height: 43px;
   color: #404040;
-  background: transparent;
   border-color: #ccc;
   border-width: 1px 0;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0));
-  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0));
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0));
   -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.35), inset 0 -1px 1px rgba(0, 0, 0, 0.05), 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.4);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.35), inset 0 -1px 1px rgba(0, 0, 0, 0.05), 1px 0 rgba(0, 0, 0, 0.05), -1px 0 rgba(0, 0, 0, 0.05), 0 1px rgba(255, 255, 255, 0.4);
+  background-color: rgb(251, 251, 251);
 }
 .nav > li:active {
   z-index: 3;
@@ -1561,6 +1590,7 @@ li.focusarea {
   color: inherit;
   text-decoration: none;
   outline: 0;
+  
 }
 .nav > li > a:before {
   content: attr(title);

@@ -30,8 +30,15 @@
   <header>
     
     <ul>
-      <li>User Manual</li>
-      <li>Contact Liio</li>
+      <li>About Liio</li>
+      <li class="help">Support
+        <ul class="help_menu">
+          <li>Help Pages</li>
+          <li>User Manual</li>
+          <li>Contact Liio</li>
+        </ul>
+      </li>
+      <li>Log Out</li>
     </ul>
     
     <div class="header_logo"></div>
@@ -45,14 +52,20 @@
 <div id="sidebar">
 
   <nav>
-    <a href="dashboard.html">Dashboard</a>
-    <a href="user_manage.html">Admin</a>
+    <ul>
+      <li>
+        <a href="dashboard.html">Dashboard</a>
+      </li>
+      <li>
+        <a href="user_manage.html">Admin</a>
+      </li>
+    </ul>
   </nav>
     <h2>Active Goals</h2>
     <nav class="goal_list">
-      <ul class="colored">
-        <li>
-          <a class="current one" href="goal_home.html"><img src="images/ski.svg" alt="Skiing" class="ski"/>Work Productively</a>
+      <ul>
+        <li class="current">
+          <a class="one" href="goal_home.html"><img src="images/ski.svg" alt="Skiing" class="ski"/>Work Productively</a>
         </li>
         <li>
           <a class="two" href="goal_home.html"><img src="images/horse.svg" alt="Lancing" class="horse"/>Communicating</a>
@@ -60,8 +73,9 @@
         <li>
           <a class="three"href="goal_home.html"><img src="images/sunscreen.svg" alt="Pool" class="sunscreen" />Managing Others</a>
         </li>
+        <li><a href="goal_home.html"><img src="images/add_this.png" alt="new" />SPARK a new goal</a></li>
       </ul>
-      <a href="goal_home.html"><img src="images/add_this.png" alt="new" />SPARK a new goal</a>
+      
     </nav>
     
   <section id="priorities">
@@ -114,7 +128,7 @@
         <div class="row">
           <div class="col-1-2">
             <figure class="data">
-              <span class="big_text blue">52</span>
+              <span class="big_text blue_txt">52</span>
               <figcaption>kudos earned so far</figcaption>
             </figure>
           </div>
