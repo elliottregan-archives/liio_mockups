@@ -136,28 +136,6 @@ header {
   z-index: 100;
 }
 
-header:hover .settings {
-  color: #fefffe;
-}
-
-header .settings {
-  font-size: .5em;
-  line-height: 2.4em;
-  vertical-align: bottom;
-  margin-left: 10px;
-  color: rgb(29, 30, 29);
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease;
-  padding-left: 30px;
-  background: url(images/gear.svg) no-repeat left center;
-  -moz-background-size: 20px;
-  -webkit-background-size: 20px;
-  background-size: 20px;
-}
-
 header .profile_pic {
   position: absolute;
   top: 20px;
@@ -201,14 +179,15 @@ header ul {
 
 header li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 20px 15px;
 }
 
-li.help:hover ul.help_menu {
+li.menu:hover ul.header_menu {
   height: 78px;
+  z-index: 10;
 }
 
-header ul.help_menu {
+header ul.header_menu {
   background-color: #1d1e1d;
   position: absolute;
   margin: auto;
@@ -228,15 +207,20 @@ header ul.help_menu {
   transition: all 200ms ease;
   
   height: 0;
+  z-index: 1;
   overflow: hidden;
 }
 
-header ul.help_menu li {
+header ul.header_menu.settings {
+  left: 210px;
+}
+
+header ul.header_menu li {
   padding: 10px 20px;
   width: 100%;
 }
 
-header ul.help_menu li:hover {
+header ul.header_menu li:hover {
   background-color: rgba(255, 255, 255, 0.16);
 }
 
@@ -950,6 +934,13 @@ ul.coaching_tips {
   border-radius: 4px;
   background-color: #f0f0f0;
   vertical-align: top;
+  font-size: .9em;
+  line-height: 1.3em;
+  color: #5c5c5c;
+}
+
+.tip:first-of-type {
+  margin-left: 0;
 }
 
 /* @group Inspiration Grid */
@@ -1514,7 +1505,7 @@ li.focusarea {
   height: 100px;
   content: '\a';
   left: 0;
-  top: 86px;
+  top: 68px;
   position: absolute;
   z-index: -1;
   border-bottom: 1px solid #dfdfdf;
@@ -1541,10 +1532,40 @@ li.focusarea {
   -webkit-box-shadow: inset 0 1px white, inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 2px #dadada, 0 3px #c4c4c4, 0 4px 3px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px white, inset 0 0 0 1px rgba(255, 255, 255, 0.7), 0 2px #dadada, 0 3px #c4c4c4, 0 4px 3px rgba(0, 0, 0, 0.1);
 }
+
 .nav > li:hover {
-  color: #539f07;
+  color: #296cac;
   text-shadow: 0 1px white, 0 0 20px white;
 }
+
+.nav > li:hover {
+  color: #296cac;
+}
+
+.nav.two > li:hover {
+  color: #db5034;
+}
+
+.nav.three > li:hover {
+  color: #58b42d;
+}
+
+.nav.four > li:hover {
+  color: #f19717;
+}
+
+.nav.five > li:hover {
+  color: #7b33dc;
+}
+
+.nav.six > li:hover {
+  color: #3baec3;
+}
+
+.nav.seven > li:hover {
+  color: #f4fe22;
+}
+
 .nav > li.active,
 .nav > .active:active,
 .nav > li:active {
