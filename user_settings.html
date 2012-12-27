@@ -15,18 +15,31 @@
 
 </head>
 <body>
-<header>
+  <header>
     
     <ul>
-      <li>User Manual</li>
-      <li>Contact Liio</li>
+      <li>About Liio</li>
+      <li class="menu">Support
+        <ul class="header_menu">
+          <li>Help Pages</li>
+          <li>User Manual</li>
+          <li>Contact Liio</li>
+        </ul>
+      </li>
+      <li class="menu">
+        Account
+        <ul class="header_menu settings">
+          <li><a href="user_settings.html" >Settings</a></li>
+          <li>Log Out</li>
+        </ul>
+      </li>
     </ul>
     
     <div class="header_logo"></div>
     
     <figure class="profile_pic">
       <img src="images/portrait.jpg" alt="profile_pic" />
-      <figcaption>Elliott <a href="user_settings.html" class="settings">settings</a></figcaption>
+      <figcaption>Elliott </figcaption>
     </figure>
 
   </header>
@@ -96,6 +109,24 @@
           
           <label for="pass_conf">Confirm New Password:</label>
           <input type="text" name="pass_conf" id="pass_conf" value="" />
+        </fieldset>
+        
+        <fieldset class="two_column">
+          <label for="pic">Profile Picture:</label>
+          <input type="file" name="pic" id="pic" />
+        </fieldset>
+        
+        <fieldset class="two_column">
+        
+          <label for="mission">Your Mission:</label>
+          <textarea id="mission"></textarea>
+          
+          <label for="values">Your Values:</label>
+          <textarea id="values"></textarea>
+          
+          <label for="intent">Your Intentions</label>
+          <textarea></textarea>
+        
         </fieldset>
         
       </form>

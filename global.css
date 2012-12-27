@@ -238,7 +238,7 @@ header ul.header_menu li:hover {
 #priorities ul li {
   color: #828382;
   font-weight: 300;
-  padding: 4px 4px 4px 20px;
+  padding: 4px 4px 4px 16px;
 }
 
 /* @group Group/User header */
@@ -307,7 +307,7 @@ header ul.header_menu li:hover {
   box-sizing: border-box;
 }
 
-#sidebar > * {
+#sidebar h2 {
   padding: 0 20px;
 }
 

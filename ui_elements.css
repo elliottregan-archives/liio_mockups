@@ -246,6 +246,16 @@ input[type=radio] {
   clear: both;
 }
 
+fieldset.two_column {
+  padding: 40px 0;
+  border-bottom: 1px solid #cfd0cf;
+}
+
+fieldset.two_column:last-of-type {
+  border: none;
+  margin: 0;
+}
+
 fieldset.two_column label, fieldset.two_column legend {
 	float: left;
 	width: 340px;
