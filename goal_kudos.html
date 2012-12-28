@@ -21,8 +21,43 @@
     <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.resize.js"></script>
 
    <script language="javascript" type="text/javascript" src="js/scripts.js"></script>
-   <script language="javascript" type="text/javascript" src="js/graph_scripts.js"></script>
 
+
+    <script type="text/javascript">
+      $(document).ready( function() {
+        
+        data = [[[1, 2],[3,3],[5,7],[7,5],[9,5],[11,4]]];
+          
+        options = {
+          series: {
+            lines: {show: true},
+            
+            points: { show:true},
+            
+            hoverable: true
+          }
+          
+        }
+       
+        $.plot($('#progress_graph'), data, options); 
+        
+        var pieData = [];
+          var series = 7;
+          for( var i = 0; i<series; i++){false
+          	pieData[i] = { label: "Goal "+(i+1), data: Math.floor(Math.random()*100)+1 }
+          }
+        
+          $.plot($('#pie_chart'), pieData, 
+          {
+            series: {
+              pie: {
+                show: true
+              }
+            }
+          });
+      });
+    
+    </script>
 
 </head>
 
@@ -145,68 +180,65 @@
             </figure>
           </div>
         </div>
+        
         <div class="row">
           <div class="col-1">
             <h2>Instructions</h2>
             <p>Complete the following sentence to add a reward to your kudos list.</p>
             <p>When I earn _____ number of Kudos Points, I will celebrate by doing _____.</p>
-            <form method="post" action="">
+            <form method="post" action="" id="set_kudos">
               <input type="number" name="points_01" value="" placeholder="Kudos Points"/>
               <input type="text" name="reward_01" value="" placeholder="Reward"/>
-              <button class="smooth confirm">Save</button>
+              <button class="smooth confirm">Redeem Kudos Points</button>
             </form>
           </div>
         </div>
       </div>
-      <div class="col-1-2">
+      <div class="kudos col-1-2">
         <table>
-        	<tr>
-        		<th>Kudos</th>
-        		<th>Reward</th>
-        		<th>Completed</th>
-        	</tr>
-        	<tr>
-        		<td>5</td>
-        		<td>Company Pencil</td>
-        		<td><div class="check">✔</div></td>
-        	</tr>
-        	<tr>
-        		<td>10</td>
-        		<td>Company Pen</td>
-        		<td><div class="check">✔</div></td>
-        	</tr>
-        	<tr>
-        		<td>25</td>
-        		<td>"Casual Friday any day"</td>
-        		<td><div class="check">✔</div></td>
-        	</tr>
-        	<tr>
-        		<td>50</td>
-        		<td>Work from home</td>
-        		<td><div class="check">✔</div></td>
-        	</tr>
-        	<tr>
-        		<td>75</td>
-        		<td>Extra sick day</td>
-        		<td><div class="check">✔</div></td>
-        	</tr>
-        	<tr>
-        		<td>100</td>
-        		<td>Day at the boss's estate</td>
-        		<td><div class="check">✔</div></td>
-        	</tr>
-        </table>			
+          <tr>
+            <th>Kudos</th>
+            <th>Reward</th>
+            <th>Completed</th>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Company Pencil</td>
+            <td><div class="check">✔</div></td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Company Pen</td>
+            <td><div class="check">✔</div></td>
+          </tr>
+          <tr>
+            <td>25</td>
+            <td>"Casual Friday any day"</td>
+            <td><div class="check">✔</div></td>
+          </tr>
+          <tr>
+            <td>50</td>
+            <td>Work from home</td>
+            <td><div class="check">✔</div></td>
+          </tr>
+          <tr>
+            <td>75</td>
+            <td>Extra sick day</td>
+            <td><div class="check">✔</div></td>
+          </tr>
+          <tr>
+            <td>100</td>
+            <td>Day at the boss's estate</td>
+            <td><div class="check">✔</div></td>
+          </tr>
+        </table>    </div>	
         				
       </div>  
-    </div>
     <h2>Where have my Kudos come from?</h2>
     <div class="row">
       <div id="progress_graph" class="col-1-2"></div>
       <div id="pie_chart" class="col-1-2"></div>
-    </div>
-    
-    <button class="smooth">Redeem Kudos Points</button>
-    
+    </div>    
   </div>
 </body>
 </html>

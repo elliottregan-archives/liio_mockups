@@ -17,11 +17,32 @@
     <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="js/flot/excanvas.min.js"></script><![endif]-->
     <script language="javascript" type="text/javascript" src="js/flot/jquery.js"></script>
     <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.pie.js"></script>
     <script language="javascript" type="text/javascript" src="js/flot/jquery.flot.resize.js"></script>
 
-    <script language="javascript" type="text/javascript" src="js/scripts.js"></script>
-    <script language="javascript" type="text/javascript" src="js/graph_scripts.js"></script>
+   <script language="javascript" type="text/javascript" src="js/scripts.js"></script>
 
+  <script type="text/javascript">
+    $(document).ready( function() {
+              
+      data = [[[1, 2],[3,3],[5,7],[7,5],[9,5],[11,4]]];
+          
+      options = {
+        series: {
+          lines: {show: true},
+          
+          points: { show:true},
+          
+          hoverable: true
+        }
+      }
+     
+      $.plot($('#progress_graph'), data, options); 
+      
+    });
+  
+  </script>
+  
 
 </head>
 
@@ -126,13 +147,15 @@
     
     <section id="stats">
       <h2>Steps Completed</h2>
-      <div id="progress_graph" class="graph" ></div>
+      <div id="progress_graph" class="col-1-2" ></div>
     </section>
       
     <div id="mission" class="row">
       <section class="col-1-2 color blue">
         <h2>Goal Progress</h2>
-        <div id="progress_graph"></div>
+        <div>
+          <div id="progress_graph" class="graph"></div>
+        </div>
       </section>
       
       <section id="notifications" class="col-1-2 color blue">

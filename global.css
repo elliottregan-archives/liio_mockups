@@ -380,7 +380,7 @@ dt:first-of-type {
   margin-top: 0;
 }
 
-dd {
+dd, p {
   font-weight: 200;
   font-style: normal;
   margin: 0;
@@ -674,6 +674,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+form#set_kudos {
+  padding: 10px 0;
+}
+
 #main_content #help form {
   padding: 10px 0;
   display: none;
@@ -926,17 +930,20 @@ ul.coaching_tips {
   display: inline-block;
   height: 100%;
   width: 200px;
-  padding: 8px;
+  padding: 15px 20px;
   margin: 8px;
   border: 1px solid #e1e1e1;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  border-radius: 4px;
-  background-color: #f0f0f0;
+  border-radius: 2px;
+  background-color: #fbfbfb;
   vertical-align: top;
   font-size: .9em;
   line-height: 1.3em;
   color: #5c5c5c;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .tip:first-of-type {
@@ -1077,18 +1084,11 @@ ul.inspiration figure:hover figcaption {
   opacity: 1;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1150px) {
   ul.inspiration {
   -moz-column-count:    3;
   -webkit-column-count: 3;
   column-count:         3;
-  }
-}
-@media (max-width: 1000px) {
-  ul.inspiration {
-  -moz-column-count:    1;
-  -webkit-column-count: 1;
-  column-count:         1;
   }
 }
 
@@ -1638,6 +1638,11 @@ table {
 	border: 1px solid #afafaf;
 	border-spacing: 0;
 	}
+
+.kudos {
+  margin-top: 30px;
+}
+	
 table th,
 table td {
 	padding: 10px 20px;
@@ -1655,8 +1660,8 @@ table tr:last-child td {
 	border-bottom: none;
 	}
 table tr:nth-child(even) {
-	background: #eee;
-	}
+  background-color: #f6f8fa;
+}
 	
 .check {
   margin: auto;

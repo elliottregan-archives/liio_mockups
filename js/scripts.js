@@ -48,6 +48,10 @@ $(document).ready( function() {
     $(this).parent().slideToggle()
   })
   
+  $('.dismiss').click( function() {
+    $(this).parent().fadeOut();
+  })
+  
   $('ul.users li:not(.new)').click( function() {
     $(this).parent().siblings('form').slideUp()
     $(this).parent().siblings('form:not(.invite)').slideDown()
