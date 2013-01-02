@@ -129,7 +129,7 @@ button.right {
 }
 
 label {
-  padding: 10px 0 5px;
+  margin: 20px 0 10px;
   display: block;
   color: #474747;
   font-weight: 200;
@@ -177,6 +177,11 @@ input[type=text]:hover, textarea:hover, input[type=text]:focus, textarea:focus {
 
 textarea {
   height: 4em;
+  border-left: 2px solid #3f9cf6;
+}
+
+textarea:hover, textarea:focus {
+  border-left-color: #3f9cf6;
 }
 
 fieldset {
@@ -192,8 +197,8 @@ h4 {
 }
 
 form:not(:first-of-type) {
-  margin-top: 40px;
-  padding-top: 20px;
+  margin-top: 0px;
+  padding-top: 0px;
   border-top: 1px dotted #cccccc;
 }
 

@@ -691,12 +691,6 @@ form#set_kudos {
   font-style: normal;
 }
 
-#start label {
-  border-left: 3px solid #339dfe;
-  padding: 8px 10px;
-  margin: 20px 0 10px;
-}
-
 #start #main_content form {
   padding-top: 20px;
 }
