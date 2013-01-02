@@ -107,6 +107,10 @@ h2, h3, h4, h5, h6 {
   
 }
 
+h3 {
+  font: 600 1.6em 'Open Sans Condensed';
+}
+
 form > fieldset:first-child, fieldset > :first-child, section > :first-child {
   margin-top: 0 !important;
   padding-top: 0 !important;
@@ -169,6 +173,12 @@ header .profile_pic {
   margin: 0 80px;
   line-height: 1.4em;
   font-size: 2.2em;
+}
+
+footer.copyright {
+  text-align: center;
+  font-size: .8em;
+  color: #656565;
 }
 
 header ul {
@@ -868,12 +878,12 @@ li.message:first-of-type {
 
 li.message .text {
   margin-left: 60px;
-  padding: 10px;
+  padding: 0 10px 10px;
   color: #717171;
 }
 
 .date {
-  padding: 22px 10px 22px 0;
+  padding: 0 10px 0 0;
   width: 40px; height: 100%;
   float: left;
   text-align: right;
@@ -1402,6 +1412,7 @@ button.smooth.giant {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.8em;
   padding: 10px 20px;
+  font-weight: 600;
 }
 
 button.smooth.confirm {
@@ -1410,6 +1421,43 @@ button.smooth.confirm {
 
 button.smooth.confirm:hover {
   border-color: #75c143;;
+}
+
+.complete_goal .unchecked {
+  margin: 0 15px 0 0;
+  width: 20px;
+  height: 20px;
+  background-color: #d2d2d2;
+  display: block;
+  color: #e62a2a;
+  line-height: 1.4em;
+  border: 1px solid #858685;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  text-align: center;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.42);
+  display: inline-block;
+  -moz-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.21);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.21);
+  font-size: .8px;
+}
+
+button.complete_goal .check {
+  display: inline-block;
+  margin: 0 15px 0px 0 ;
+  font-size: .5em;
+}
+
+button.complete_goal {
+  margin-right: 10px;
+}
+
+.complete_goal small {
+  display: block;
+  color: #8a8a8a;
+  font: .4em 'Open Sans', sans-serif;
 }
 
 /* @end */
@@ -1523,6 +1571,10 @@ li.focusarea {
 
 #start.sub_tab, #report.sub_tab {
   display: block;
+}
+
+.sub_tab li:not(:first-of-type) dl {
+  display: none;
 }
 
 #report fieldset {
@@ -1707,7 +1759,7 @@ table tr:nth-child(even) {
   width: 20px;
   height: 20px;
   background-color: #00d73f;
-  display: block;
+  display: inline-block;
   color: #ffffff;
   line-height: 1.4em;
   border: 1px solid #27b42e;
@@ -1715,7 +1767,6 @@ table tr:nth-child(even) {
   -moz-border-radius: 1px;
   border-radius: 1px;
   color: white;
-  content: '✔';
   text-align: center;
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.42);
 }

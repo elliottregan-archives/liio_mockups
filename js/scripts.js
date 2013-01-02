@@ -77,6 +77,7 @@ $(document).ready( function() {
   
   $('button.expand').click( function() {
     $(this).parent().siblings('fieldset').slideToggle()
+    $(this).siblings('dl').slideToggle()
     
     var text = $(this).text()
     $(this).text(
