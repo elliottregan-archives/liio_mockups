@@ -98,7 +98,7 @@ h1 ~ p {
 h2 {
   font-weight: 300;
   font-style: normal;
-  margin: 20px 0 0;
+  margin: 60px 0 0;
   font-size: 1.6em;
   color: #7e7e7e;
 }
@@ -513,7 +513,7 @@ nav#goal_steps {
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -719,6 +719,11 @@ ul.boxed_list {
   overflow-y: auto;
 }
 
+li ul.boxed_list {
+  height: auto;
+  max-height: 200px;
+}
+
 #queue ul.boxed_list {
   height: auto;
 }
@@ -740,6 +745,10 @@ ul.boxed_list li {
   text-shadow: 0 1px 0 rgb(255, 255, 255);
   font-size: .8em;
   position: relative;
+}
+
+ul.boxed_list li:last-of-type {
+  border-bottom: none;
 }
 
 ul.boxed_list li.selected::after {
@@ -1299,6 +1308,7 @@ li .sub_content {
 .list_buttons {
   float: right;
   display: inline;
+  margin-left: 20px;
 }
 
 .list_buttons button {
