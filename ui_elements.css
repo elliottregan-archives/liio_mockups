@@ -214,11 +214,12 @@ strong {
   font-weight: 600;
 }
 
-h3 {
-  font: 600 1.6em 'Open Sans Condensed';
-  width: 100%;
-  padding: 10px 0 5px;
+h1 {
+  font-size: 2.6em;
   margin: 0;
+  padding: 10px 0 5px;
+  font-weight: 800;
+  font-family: 'Open Sans Condensed';
 }
 
 h2 button.right {
@@ -230,6 +231,10 @@ h2 button.right {
 ul.bulleted {
   list-style: circle;
   padding-left: 40px;
+}
+
+ul.bulleted li {
+  display: list-item;
 }
 
 legend ~ fieldset {

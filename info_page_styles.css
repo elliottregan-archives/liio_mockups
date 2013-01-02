@@ -8,13 +8,15 @@ h1, h2, h3 {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-h1 {
-  
-}
-
 html, body {
   margin: 0;
   padding: 0;
+}
+
+body.info_page #main_content {
+  margin: 140px auto 0;
+  max-width: 920px;
+  padding: 0 40px 60px;
 }
 
 a {
@@ -47,6 +49,21 @@ header {
   z-index: 100;
   background-color: rgb(28, 29, 28);
   border-bottom: 4px solid rgb(74, 174, 247);
+}
+
+.preview_screen {
+  float: right;
+  width: 400px;
+  margin: 0 0 40px 40px;
+  -moz-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.39);
+  -webkit-box-shadow: 0 10px 16px rgba(0, 0, 0, 0.39);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.39);
+  border: 1px solid #909090;
+}
+
+.920_wrapper {
+  width: 920px;
+  margin: auto;
 }
 
 nav {
@@ -316,16 +333,16 @@ button:hover {
 }
 
 h2 {
-  font-size: 2.2em;
-  font-weight: bold;
-  color: #2f2f2f;
+  font-weight: 300;
+  font-style: normal;
   margin: 60px 0 0;
+  font-size: 2em;
+  color: #7e7e7e;
 }
 
 h3 {
 	color: #252525;
-	font-size: 1.8em;
-
+	font-size: 1.6em;
 }
 
 /*.features h3 {

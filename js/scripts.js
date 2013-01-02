@@ -33,7 +33,7 @@ $(document).ready( function() {
     $(this).toggleClass('selected')
   })
   
-  $('#queue li').not('.completed').click( function(e) {
+  $('#queue li.clickable').not('.completed').click( function(e) {
     if ((this == e.target) || (e.target.className == 'title')) {
       $(this).children('.sub_content').slideToggle()
       $(this).toggleClass('clickable expanded')

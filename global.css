@@ -775,12 +775,12 @@ ul.boxed_list li.selected:hover {
   background-color: ;
 }
 
-ul.boxed_list li:not(.expanded).clickable:hover, ul.boxed_list li.expanded {
+ul.boxed_list li:not(.expanded):not(.completed).clickable:hover, ul.boxed_list li.expanded {
   background-color: #ffffff;
   cursor: pointer;
 }
 
-ul.boxed_list li:not(.expanded):active {
+ul.boxed_list li.clickable:not(.expanded):not(.completed):active {
   background-color: #f5f5f5;
 }
 
@@ -1291,14 +1291,39 @@ li[class*='col-']:nth-of-type(odd) {
 
 /* @end */
 
-li.completed span{
-  color: #b7b7b7;
+ul li.completed span{
+
+}
+
+ul li.completed::after {
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-color: #00d73f;
+  display: block;
+  color: #ffffff;
+  line-height: 1.4em;
+  border: 1px solid #27b42e;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  color: white;
+  content: '✔';
+  text-align: center;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.42);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+ul li.other_goal {
+  background-color: #dfe5e8;
 }
 
 li .sub_content {
   display: none;
 
-  padding-left: 15px;
+  padding: 1px 0 10px 15px;
   border-left: 2px solid #737373;
   margin: 20px;
 }
@@ -1308,7 +1333,7 @@ li .sub_content {
 .list_buttons {
   float: right;
   display: inline;
-  margin-left: 20px;
+  margin: 0 40px 0 20px;
 }
 
 .list_buttons button {
@@ -1373,6 +1398,12 @@ button.smooth.small {
   vertical-align: bottom;
 }
 
+button.smooth.giant {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.8em;
+  padding: 10px 20px;
+}
+
 button.smooth.confirm {
   border-color: #8ec06d;
 }
@@ -1386,16 +1417,20 @@ button.smooth.confirm:hover {
 /* @group Column Navigation UI */
 
 .column_nav {
-  width: 100%;
   min-height: 200px;
   position: relative;
   border: 1px solid #bdbdbd;
-  margin: 10px 0;
+}
+
+.column_nav::after {
+  content: '\a';
+  clear: both;
+  display: block;
 }
 
 .column_nav ul {
   position: absolute;
-  width: 33.34%; height: 100%;
+  width: 50%; height: 100%;
   -moz-box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.32);
   -webkit-box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.32);
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.32);
