@@ -107,5 +107,19 @@ $(document).ready( function() {
   var coachingWidth = $('ul.coaching_tips').children().length * 234 + 12
   
   $('ul.coaching_tips').css('width', coachingWidth)
+  
+  $('#complete_goal').live( 'click', function() {
+  
+    console.log($(this).contents())
+  
+    if ($(this).contents() == ["<span class='unchecked'></span>","Complete Goal"]){
+      $(this).replaceWith( "<button id='complete_goal' class='smooth giant confirm complete_goal'><span class='check'>✔</span>Goal Completed<small>click to make changes</small></button>")
+      console.log('goodbye')
+    }
+    else {
+      $(this).replaceWith("<button id='complete_goal' class='smooth giant confirm complete_goal'><span class='unchecked'></span>Complete Goal</button>")
+      console.log('hello')
+    }
+  })
 
 });

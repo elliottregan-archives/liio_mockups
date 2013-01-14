@@ -925,6 +925,11 @@ ul.reflections {
   margin-left: 100px;
 }
 
+section.submit {
+  padding: 20px 0;
+  text-align: center;
+}
+
 #coaching {
   overflow
 }
@@ -1304,11 +1309,12 @@ li[class*='col-']:nth-of-type(odd) {
 
 /* @end */
 
-ul li.completed span{
-
+ul li.completed{
+  border-left: 3px solid #4c97c7;
+  padding-left: 9px;
 }
 
-ul li.completed::after {
+/*ul li.completed::after {
   margin: auto;
   width: 20px;
   height: 20px;
@@ -1327,7 +1333,7 @@ ul li.completed::after {
   position: absolute;
   right: 10px;
   top: 10px;
-}
+}*/
 
 ul li.other_goal {
   background-color: #dfe5e8;
@@ -1454,7 +1460,9 @@ button.complete_goal .check {
 }
 
 button.complete_goal {
-  margin-right: 10px;
+  margin: 20px auto;
+  display: block;
+  width: 300px;
 }
 
 .complete_goal small {
