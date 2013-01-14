@@ -181,6 +181,8 @@ footer.copyright {
   color: #656565;
 }
 
+/* @group Header menu stuff */
+
 header ul {
   position: absolute;
   right: 160px;
@@ -233,6 +235,8 @@ header ul.header_menu li {
 header ul.header_menu li:hover {
   background-color: rgba(255, 255, 255, 0.16);
 }
+
+/* @end */
 
 .header_logo {
   display: inline-block;

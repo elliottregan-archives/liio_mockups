@@ -70,34 +70,45 @@ nav {
   color: #474747;
   text-shadow: none;
   text-decoration: none;
-  margin: 30px 20px 0 0;
   text-align: right;
+  margin: 60px 20px 0 0;
+  vertical-align: text-bottom;
+}
+
+nav.bubbles {
+  margin: 30px 20px 0 0;
 }
 
 nav a {
-  margin-left: 50px;
+  min-width: 50px;
+  display: inline-block;
+  text-align: center;
+  color: #f3f3f3;
+  margin-left: 20px;
   padding: 8px 24px;
+}
+
+nav.bubbles a {
+  background: url(noise.png), -moz-linear-gradient(90deg, #e5e5e5 0%, white 100%) #ffffff;
+  background: url(noise.png), -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(white)) #ffffff;
   border: 1px solid #c6c6c6;
   -webkit-border-radius: 32px;
   -moz-border-radius: 32px;
-  min-width: 50px;
   border-radius: 32px;
-  display: inline-block;
-  text-align: center;
-  background: url(noise.png), -moz-linear-gradient(90deg, #e5e5e5 0%, white 100%) #ffffff;
-  background: url(noise.png), -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(white)) #ffffff;
-  
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+  color: #323232;
+  margin-left: 50px;
+  padding: 8px 24px;
 }
 
-nav a:hover {
+nav.bubbles a:hover {
   background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 46.7%, rgba(255, 255, 255, 0.53) 53.3%, rgba(255, 255, 255, 0.19) 100%), url(noise.png), -moz-linear-gradient(90deg, #e5e5e5 0%, white 100%) #ffffff;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0)), color-stop(0.467, rgba(255, 255, 255, 0)), color-stop(0.533, rgba(255, 255, 255, 0.53)), to(rgba(255, 255, 255, 0.19))), url(noise.png), -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(white)) #ffffff;
 }
 
-nav a.focus {
+nav.bubbles a.focus {
   color: #ffffff;
   background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.23) 0%, rgba(255, 255, 255, 0.1) 100%) #46a7f6;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.23)), to(rgba(255, 255, 255, 0.1))) #46a7f6;  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
@@ -107,7 +118,7 @@ nav a.focus {
   border: 1px solid #20282d;
 }
 
-nav a.focus:hover {
+nav.bubbles a.focus:hover {
   background-color: #56b9f9;
 }
 
@@ -138,7 +149,6 @@ li {
 /* @group Scaffolding */
 
 nav {
-  margin: 30px 60px;
   position: relative;
   float: right;
 }
